@@ -1,4 +1,17 @@
-<div class="app flex flex-col items-center text-center">
-  <i class="fa-solid fa-{{ include.icon }} text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"></i>
-  <p class="text-[8px] sm:text-xs md:text-base lg:text-lg xl:text-xl">{{ include.name }}</p>
+<div class="app flex flex-col items-center text-center"
+  style="{% if include.col %}grid-column:{{ include.col }};{% endif %}
+    {% if include.row %}grid-row:{{ include.row }};{% endif %}">
+
+  {% if include.action contains "link" %}
+  {% assign url = include.action | replace: "link[", "" | replace: "]", "" %}
+  <a href="{{ url }}" target="_blank">
+    <i class="{{ include.class }} text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"></i>
+    <p class="text-[8px] sm:text-xs md:text-base lg:text-lg xl:text-xl">{{ include.name }}</p>
+  </a>
+
+  {% else %}
+    <i class="{{ include.class }} text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"></i>
+    <p class="text-[8px] sm:text-xs md:text-base lg:text-lg xl:text-xl">{{ include.name }}</p>
+  {% endif %}
+
 </div>

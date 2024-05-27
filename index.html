@@ -4,23 +4,24 @@ layout: default
 <div id="screen" class="bg-amber-200 w-full max-w-screen-2xl my-auto aspect-video
   [max-height:_calc(100vh_-_40px)]">
   <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-x-2 gap-y-1
-    grid-flow-col justify-evenly items-center w-full h-full bg-amber-300">
-    {% include app.html icon="user" name="Blog" %}
-    {% include app.html icon="user" name="Projects" %}
-    {% include app.html icon="user" name="Email" %}
-    {% include app.html icon="user" name="Projects" %}
-    {% include app.html icon="user" name="Blog" %}
-    {% include app.html icon="user" name="Email" %}
-    {% include app.html icon="user" name="Email" %}
-    {% include app.html icon="user" name="Blog" %}
-    {% include app.html icon="user" name="Projects" %}
+    grid-flow-col items-center w-full h-full bg-amber-300">
+    {% for project in site.data.projects %}
+      {% include app.html class="fa-solid fa-user" name=project.name %}
+    {% endfor %}
+
+    {% include app.html class="fa-brands fa-linkedin" name="LinkedIn" col=10
+      action="link[https://www.linkedin.com/in/dominik-borilovi%C4%87-4b92a1175/]" %}
+    {% include app.html class="fa-brands fa-github" name="GitHub" col=10 row=2
+      action="link[https://github.com/dborilovic7]" %}
+    {% include app.html class="fa-solid fa-envelope" name="Mail" col=10 row=6
+      action="link[mailto:dokikik@gmail.com]" %}
   </div>
 
   <div id="taskbar" class="bg-gray-300 w-full h-10 flex justify-between">
     <button>Menu</button>
     <div>
-      <span class="text-xl">12.12.2020</span>
-      <span class="text-xl">12:00</span>
+      <span class="text-xl">{{ "today" | date: "%d.%m.%Y." }}</span>
+      <span class="text-xl">{{ "now" | date: "%H:%M" }}</span>
     </div>
   </div>
 </div>
