@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="screen" class="bg-amber-200 w-full max-w-screen-2xl my-auto aspect-video
-  [max-height:_calc(100vh_-_40px)]">
+  [max-height:_calc(100vh_-_var(--taskbar-height))]">
   <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-x-1 gap-y-1 p-1
     grid-flow-col items-center w-full h-full bg-amber-300">
     {% for project in site.data.projects %}
@@ -17,10 +17,10 @@ layout: default
       action="link[mailto:dokikik@gmail.com]" %}
   </div>
 
-  <div id="taskbar" class="bg-gray-300 w-full h-10 flex justify-between">
-    <button>Menu</button>
-    <div>
-      <span class="text-xl">{{ "today" | date: "%d.%m.%Y." }}</span>
+  <div id="taskbar" class="bg-gray-300 w-full h-[--taskbar-height] flex justify-between">
+    <button class="my-auto px-2">Menu</button>
+    <div class="my-auto px-2">
+      <span class="text-xl mr-1">{{ "today" | date: "%d.%m.%Y." }}</span>
       <span class="text-xl">{{ "now" | date: "%H:%M" }}</span>
     </div>
   </div>
