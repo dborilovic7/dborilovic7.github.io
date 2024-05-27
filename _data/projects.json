@@ -2,5 +2,13 @@
   {
     "name": "NetPizza",
     "description": "A college project - Website for ordering pizza."
+  },
+  {
+    "name": "Skynet",
+    "description": "Botara za skrejpanje domaćih oglasa sa weba."
+  },
+  {
+    "name": "TorrentBay",
+    "description": "Your torrent search engine!"
   }
 ]
