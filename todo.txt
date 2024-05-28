@@ -2,6 +2,7 @@
   - Make a projects folder that opens a list of my projects
   - Make a blog folder that opens a list of my blog posts
 - Make sure windows can't be dragged off the screen (clamp?)
+- Style the windows
 - Finish styling the taskbar
 - Hovering over any app should have a popup with its description
 - Require double click for activating click actions? (+ enable activation with one click + enter)
@@ -10,3 +11,4 @@
 - See if changing windows' transform property is faster than changing windows' left and top properties:
   - If yes, update the window dragging code
 - Add different themes (win95/98, win xp, macos, linux etc.)
+- Optimize windows.js script loading (import in index.html and make sure to call setupWindow for each window?)
