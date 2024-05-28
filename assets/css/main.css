@@ -8,3 +8,8 @@
 :root {
   --taskbar-height: 4rem;
 }
+
+dialog {
+  margin: 0;
+  position: fixed;
+}

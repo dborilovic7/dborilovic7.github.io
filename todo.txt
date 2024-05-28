@@ -1,8 +1,12 @@
 - Make windows that can be opened by clicking on folders:
   - Make a projects folder that opens a list of my projects
   - Make a blog folder that opens a list of my blog posts
+- Make sure windows can't be dragged off the screen (clamp?)
 - Finish styling the taskbar
 - Hovering over any app should have a popup with its description
 - Require double click for activating click actions? (+ enable activation with one click + enter)
 - Add drag'n'drop functionality
 - Change grid dimensions (8x5?) + make icons bigger?
+- See if changing windows' transform property is faster than changing windows' left and top properties:
+  - If yes, update the window dragging code
+- Add different themes (win95/98, win xp, macos, linux etc.)

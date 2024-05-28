@@ -1,0 +1,41 @@
+<dialog open id="dijalog" class="w-[300px] h-[250px] flex flex-col">
+  <div id="topbar" class="flex justify-between px-1">
+    <div id="topbar__info">
+      <i id="topbar__info-icon" class="fa-solid fa-folder px-1 select-none">
+      </i><span id="topbar__info-name" class="select-none">Folder name</span>
+    </div>
+    <div>
+      <i class="fa-solid fa-minus px-1"></i>
+      <i class="fa-solid fa-square px-1"></i>
+      <i class="fa-solid fa-close px-1"></i>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.getElementById("dijalog");
+  const topbar = document.getElementById("topbar");
+  const draggableElementIds = ["topbar", "topbar__info", "topbar__info-icon", "topbar__info-name"];
+  let offsetX, offsetY;
+
+  topbar.addEventListener("mousedown", onMouseDown);
+
+  function onMouseDown(e) {
+    if (!draggableElementIds.includes(e.target.id)) return;
+
+    offsetX = e.offsetX;
+    offsetY = e.offsetY;
+
+    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseup", onMouseUp);
+  }
+
+  function onMouseMove(e) {
+    dialog.style.left = `${e.clientX - offsetX}px`;
+    dialog.style.top = `${e.clientY - offsetY}px`;
+  }
+
+  function onMouseUp(e) {
+    document.removeEventListener("mousemove", onMouseMove);
+  }
+</script>

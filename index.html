@@ -5,9 +5,8 @@ layout: default
   [max-height:_calc(100vh_-_var(--taskbar-height))]">
   <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-x-1 gap-y-1 p-1
     grid-flow-col items-center w-full h-full bg-amber-300">
-    {% for project in site.data.projects %}
-      {% include app.html class="fa-solid fa-user" name=project.name %}
-    {% endfor %}
+    {% include app.html class="fa-solid fa-folder-closed" name="Projects" %}
+    {% include app.html class="fa-solid fa-folder-closed" name="Blog" col=2 %}
 
     {% include app.html class="fa-brands fa-linkedin" name="LinkedIn" col=10
       action="link[https://www.linkedin.com/in/dominik-borilovi%C4%87-4b92a1175/]" %}
@@ -24,4 +23,6 @@ layout: default
       <span class="text-xl">{{ "now" | date: "%H:%M" }}</span>
     </div>
   </div>
+
 </div>
+{% include window.html %}
