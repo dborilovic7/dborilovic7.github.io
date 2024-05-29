@@ -1,5 +1,4 @@
 function setupWindow(id) {
-  console.log(`Setting up window ${id}`);
   const openBtn = document.getElementById(`open-btn${id}`);
   const dialog = document.getElementById(`window${id}`);
   const topbar = document.getElementById(`topbar${id}`);
