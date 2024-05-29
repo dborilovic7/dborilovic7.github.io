@@ -1,7 +1,11 @@
 function setupWindow(id) {
   console.log(`Setting up window ${id}`);
+  const openBtn = document.getElementById(`open-btn${id}`);
   const dialog = document.getElementById(`window${id}`);
   const topbar = document.getElementById(`topbar${id}`);
+  // const topbarMinimizeBtn = document.getElementById(`topbar__actions-minimize${id}`);
+  // const topbarMaximizeBtn = document.getElementById(`topbar__actions-maximize${id}`);
+  const topbarCloseBtn = document.getElementById(`topbar__actions-close${id}`);
   const draggableElementIds = [
     `topbar${id}`,
     `topbar__info${id}`,
@@ -10,8 +14,10 @@ function setupWindow(id) {
   ];
   let offsetX, offsetY;
 
+  openBtn && openBtn.addEventListener("click", () => dialog.show());
+  topbarCloseBtn.addEventListener("click", () => dialog.close());
+  
   topbar.addEventListener("mousedown", onMouseDown);
-
   function onMouseDown(e) {
     if (!draggableElementIds.includes(e.target.id)) return;
 

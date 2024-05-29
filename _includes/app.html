@@ -10,6 +10,12 @@
   </a>
 
   {% elsif include.action contains "open" %}
+  {% assign windowId = include.action | replace: "open[", "" | replace: "]", "" %}
+  <button id="open-btn{{ windowId }}">
+    <i class="{{ include.class }} text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"></i>
+    <p class="text-[8px] sm:text-xs md:text-base lg:text-lg xl:text-xl">{{ include.name }}</p>
+  </button>
+  {% include window.html id=windowId name=include.name %}
 
   {% else %}
     <i class="{{ include.class }} text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"></i>

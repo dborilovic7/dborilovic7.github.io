@@ -1,18 +1,17 @@
 {% if include.id %}
-<dialog open id="window{{ include.id }}" class="w-[300px] h-[250px] flex flex-col">
+<dialog id="window{{ include.id }}" class="w-[300px] h-[250px]">
   <div id="topbar{{ include.id }}" class="flex justify-between px-1 select-none">
     <div id="topbar__info{{ include.id }}">
       <i id="topbar__info-icon{{ include.id }}" class="fa-solid fa-folder px-1">
-      </i><span id="topbar__info-name{{ include.id }}">Folder name</span>
+      </i><span id="topbar__info-name{{ include.id }}">{{ include.name }}</span>
     </div>
-    <div>
-      <i class="fa-solid fa-minus px-1"></i>
-      <i class="fa-solid fa-square px-1"></i>
-      <i class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions{{ include.id }}">
+      <i id="topbar__actions-minimize{{ include.id }}" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize{{ include.id }}" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close{{ include.id }}" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 </dialog>
 
-<script src="/assets/js/windows.js"></script>
 <script>setupWindow({{ include.id }})</script>
 {% endif %}
