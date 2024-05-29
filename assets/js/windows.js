@@ -35,5 +35,15 @@ function setupWindow(id) {
 
   function onMouseUp(e) {
     document.removeEventListener("mousemove", onMouseMove);
+
+    const topbarHalfWidth = topbar.scrollWidth / 2;
+    if (dialog.offsetLeft + topbarHalfWidth < 0) dialog.style.left = `-${topbarHalfWidth}px`;
+    else if (dialog.offsetLeft + topbarHalfWidth > window.innerWidth)
+      dialog.style.left = `${window.innerWidth - topbarHalfWidth}px`;
+
+    const topbarHeight = topbar.scrollHeight;
+    if (dialog.offsetTop < 0) dialog.style.top = "0px";
+    else if (dialog.offsetTop + topbarHeight > window.innerHeight)
+      dialog.style.top = `${window.innerHeight - topbarHeight}px`;
   }
 }

@@ -1,4 +1,3 @@
-- Make sure windows can't be dragged off the screen (clamp?)
 - Style the windows
 - Finish styling the taskbar
 - Hovering over any app should have a popup with its description
