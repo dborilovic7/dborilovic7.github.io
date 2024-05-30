@@ -1,9 +1,11 @@
-- Style the windows
-- Finish styling the taskbar
 - Hovering over any app should have a popup with its description
+- Finish styling the taskbar
 - Make windows maximize and minimize functionalities
 - Require double click for activating click actions? (+ enable activation with one click + enter)
+- Add favicon
 - Add drag'n'drop functionality (apps)
+- Make monochromatic themes
+- Fix app styling in windows if necessary
 - Change grid dimensions (8x5?) + make icons bigger?
 - See if changing windows' transform property is faster than changing windows' left and top properties:
   - If yes, update the window dragging code

@@ -1,14 +1,17 @@
 [
   {
     "name": "NetPizza",
-    "description": "A college project - Website for ordering pizza."
+    "description": "A college project - Website for ordering pizza.",
+    "icon_class": "fa-solid fa-pizza-slice"
   },
   {
     "name": "Skynet",
-    "description": "Botara za skrejpanje domaćih oglasa sa weba."
+    "description": "Botara za skrejpanje domaćih oglasa sa weba.",
+    "icon_class": "fa-solid fa-robot"
   },
   {
     "name": "TorrentBay",
-    "description": "Your torrent search engine!"
+    "description": "Your torrent search engine!",
+    "icon_class": "fa-solid fa-globe"
   }
 ]
