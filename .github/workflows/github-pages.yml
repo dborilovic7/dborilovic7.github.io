@@ -12,7 +12,6 @@ jobs:
       BUNDLE_FROZEN: false
     steps:
       - uses: actions/checkout@v2
-      - run: bundle config unset frozen
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
