@@ -1,4 +1,3 @@
-- Hovering over any app should have a popup with its description
 - Finish styling the taskbar
 - Make windows maximize and minimize functionalities
 - Require double click for activating click actions? (+ enable activation with one click + enter)
@@ -12,3 +11,6 @@
 - Add different themes (win95/98, win xp, macos, linux etc.)
 - windows.js -> refactor selectors (select dialog children through dialog and not the whole document)
 - Hover, focus etc. styles
+- Change tooltip -> Show when hovering over the app div and not the icon, then update tooltip positioning
+- Responsive tooltip styles?
+- Check for bugs in tooltips.js and fix if possible

@@ -5,14 +5,14 @@ layout: default
   [max-height:_calc(100vh_-_var(--taskbar-height))] select-none">
   <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-x-1 gap-y-1 p-1
     grid-flow-col items-center w-full h-full bg-amber-300">
-    {% include app.html iclass="fa-solid fa-folder-closed" name="Projects" action="open[1]" items=site.data.projects %}
-    {% include app.html iclass="fa-solid fa-folder-closed" name="Blog" col=2 action="open[2]" %}
+    {% include app.html iclass="fa-solid fa-folder-closed" name="Projects" description="Take a look at my projects" action="open[1]" items=site.data.projects %}
+    {% include app.html iclass="fa-solid fa-folder-closed" name="Blog" description="Nothing here yet" col=2 action="open[2]" %}
 
     {% include app.html iclass="fa-brands fa-linkedin" name="LinkedIn" col=10
       action="link[https://www.linkedin.com/in/dominik-borilovi%C4%87-4b92a1175/]" %}
     {% include app.html iclass="fa-brands fa-github" name="GitHub" col=10 row=2
       action="link[https://github.com/dborilovic7]" %}
-    {% include app.html iclass="fa-solid fa-envelope" name="Mail" col=10 row=6
+    {% include app.html iclass="fa-solid fa-envelope" name="Mail" description="Contact me" col=10 row=6
       action="link[mailto:dokikik@gmail.com]" %}
   </div>
 

@@ -5,17 +5,17 @@
   {% if include.action contains "link" %}
   {% assign url = include.action | replace: "link[", "" | replace: "]", "" %}
   <a href="{{ url }}" target="_blank">
-    {% include app-base.html iclass=include.iclass name=include.name %}
+    {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
   </a>
 
   {% elsif include.action contains "open" %}
   {% assign windowId = include.action | replace: "open[", "" | replace: "]", "" %}
   <button id="open-btn{{ windowId }}">
-    {% include app-base.html iclass=include.iclass name=include.name %}
+    {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
   </button>
   {% include window.html id=windowId name=include.name items=include.items %}
 
   {% else %}
-    {% include app-base.html iclass=include.iclass name=include.name %}
+    {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
   {% endif %}
 </div>
