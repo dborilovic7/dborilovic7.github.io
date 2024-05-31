@@ -14,7 +14,7 @@
 
   <div class="window__content flex p-3 gap-4">
     {% for item in include.items %}
-      {% include app.html iclass=item.icon_class name=item.name %}
+      {% include app.html iclass=item.icon_class name=item.name description=item.description %}
     {% endfor %}
   </div>
 </dialog>

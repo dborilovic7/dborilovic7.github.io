@@ -13,4 +13,5 @@
 - Hover, focus etc. styles
 - Change tooltip -> Show when hovering over the app div and not the icon, then update tooltip positioning
 - Responsive tooltip styles?
-- Check for bugs in tooltips.js and fix if possible
+- Make another view for windows -> List view (with name, date etc. columns)
+- Make the start menu

@@ -20,9 +20,9 @@ dialog {
   font: initial;
   font-size: 0.5rem;
   position: absolute;
-  left: var(--left, 100%);
+  left: 50%;
   top: 100%;
-  transform: scale(var(--scale));
+  transform: translateX(-50%) scale(var(--scale));
   width: 200%;
   padding: 0.25rem;
   border-radius: 8%;
@@ -32,5 +32,5 @@ dialog {
 [data-tooltip]:hover::after {
   --scale: 1;
   content: attr(data-tooltip);
-  transition: transform 100ms 500ms;
+  transition: transform 100ms 600ms;
 }
