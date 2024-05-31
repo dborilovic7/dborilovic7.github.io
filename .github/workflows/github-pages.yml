@@ -8,9 +8,12 @@ on:
 jobs:
   github-pages:
     runs-on: ubuntu-latest
+    env:
+      BUNDLE_FROZEN: false
     steps:
       - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1.176.0
+      - run: bundle config unset frozen
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
           bundler-cache: true
