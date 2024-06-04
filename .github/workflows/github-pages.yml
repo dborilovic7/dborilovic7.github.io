@@ -8,6 +8,8 @@ on:
 jobs:
   github-pages:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       BUNDLE_FROZEN: false
     steps:
