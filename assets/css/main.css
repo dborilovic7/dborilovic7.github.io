@@ -18,7 +18,7 @@ dialog {
   --scale: 0;
   content: "";
   font: initial;
-  font-size: 0.5rem;
+  font-size: 1rem;
   position: absolute;
   left: 50%;
   top: 100%;
@@ -33,4 +33,8 @@ dialog {
   --scale: 1;
   content: attr(data-tooltip);
   transition: transform 100ms 600ms;
+}
+
+[data-tooltip].wide-tooltip::after {
+  width: 300%;
 }

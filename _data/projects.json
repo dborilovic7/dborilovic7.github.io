@@ -1,17 +1,22 @@
 [
   {
-    "name": "NetPizza",
-    "description": "College capstone project - a website for ordering pizza.",
-    "icon_class": "fa-solid fa-pizza-slice"
+    "name": "Gladiators",
+    "description": "Browser-based MMORPG with turn-based combat.(Collab)",
+    "icon_class": "fa-solid fa-shield-halved wide-tooltip"
   },
   {
-    "name": "Skynet",
-    "description": "Bot za skrejpanje domaćih oglasa sa weba.",
-    "icon_class": "fa-solid fa-robot"
+    "name": "Coin Vision",
+    "description": "Computer vision mining bot for the COIN app written in Python.",
+    "icon_class": "fa-solid fa-eye wide-tooltip"
   },
   {
     "name": "TorrentBay",
     "description": "Your torrent search engine!",
-    "icon_class": "fa-solid fa-globe"
+    "icon_class": "fa-solid fa-globe wide-tooltip"
+  },
+  {
+    "name": "NetPizza",
+    "description": "College capstone project - a website for ordering pizza.",
+    "icon_class": "fa-solid fa-pizza-slice wide-tooltip"
   }
 ]

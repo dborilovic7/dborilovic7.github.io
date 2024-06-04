@@ -17,3 +17,5 @@
 - Make another view for windows -> List view (with name, date etc. columns)
 - Make the start menu
 - Make a real email app and replace the mailto link with it?
+- Make the app mobile-friendly
+- Add a "properties" window for projects(all apps?) showing language used, date created etc.
