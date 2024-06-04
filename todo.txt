@@ -19,3 +19,4 @@
 - Make a real email app and replace the mailto link with it?
 - Make the app mobile-friendly
 - Add a "properties" window for projects(all apps?) showing language used, date created etc.
+- When dragging a window, make sure that its z-index is higher than other windows

@@ -1,6 +1,6 @@
 url: "https://dborilovic7.github.io"
 baseurl: "/"
-title: "Doks OS"
+title: "DomOS"
 
 plugins:
   - jekyll-postcss-v2
