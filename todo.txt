@@ -20,3 +20,4 @@
 - Make the app mobile-friendly
 - Add a "properties" window for projects(all apps?) showing language used, date created etc.
 - When dragging a window, make sure that its z-index is higher than other windows
+- Optimize clock code (set interval to 1 min if seconds are not shown)
