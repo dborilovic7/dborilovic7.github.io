@@ -24,8 +24,8 @@ layout: default
   <div id="taskbar" class="bg-slate-700 text-emerald-50 w-full h-[--taskbar-height] flex justify-between">
     <button class="px-4 mr-1 border-r border-slate-400">Menu</button>
     <div class="my-auto px-4">
-      <span class="text-md mr-1">{{ "today" | date: "%d.%m.%Y." }}</span>
-      <span class="text-md">{{ "now" | date: "%H:%M" }}</span>
+      <span id="taskbar-date" class="text-md mr-2">{{ "today" | date: "%d.%m.%Y." }}</span>
+      <span id="taskbar-time" class="text-md">{{ "now" | date: "%H:%M" }}</span>
     </div>
   </div>
 </div>
