@@ -1,3 +1,4 @@
+- Make a "photo viewer", "video viewer" and "file explorer" windows (different types of onclick actions for apps)
 - Restyle the app
 - Change dialog position to absolute and update its code (dragging, clamping)
 - Make windows maximize and minimize functionalities
