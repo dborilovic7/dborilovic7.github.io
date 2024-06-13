@@ -7,7 +7,11 @@
   {
     "name": "Coin Vision",
     "description": "Computer vision mining bot for the COIN app written in Python.",
-    "icon_class": "fa-solid fa-eye wide-tooltip"
+    "icon_class": "fa-solid fa-eye wide-tooltip",
+    "action": "open[videos(4)]",
+    "data": {
+      "src": "/assets/videos/coin_vision_ads.mp4"
+    }
   },
   {
     "name": "TorrentBay",
@@ -17,6 +21,11 @@
   {
     "name": "NetPizza",
     "description": "College capstone project - a website for ordering pizza.",
-    "icon_class": "fa-solid fa-pizza-slice wide-tooltip"
+    "icon_class": "fa-solid fa-pizza-slice wide-tooltip",
+    "action": "open[photos(3)]",
+    "data": {
+      "src": "/assets/images/netpizza_home_eng_demo.png",
+      "alt": "NetPizza Homepage"
+    }
   }
 ]

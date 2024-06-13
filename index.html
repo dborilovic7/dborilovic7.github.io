@@ -9,9 +9,9 @@ layout: default
       Project demos coming soon...
     </p>
     {% include app.html iclass="fa-solid fa-folder-closed" name="Projects" description="Take a look at my projects"
-      action="open[1]" items=site.data.projects %}
+      action="open[explorer(1)]" data=site.data.projects %}
     {% include app.html iclass="fa-solid fa-folder-closed" name="Blog" description="Nothing here yet" col=2
-      action="open[2]" %}
+      action="open[explorer(2)]" %}
 
     {% include app.html iclass="fa-brands fa-linkedin" name="LinkedIn" description="Visit my LinkedIn profile page" col=10
       action="link[https://www.linkedin.com/in/dominik-borilovi%C4%87-4b92a1175/]" %}

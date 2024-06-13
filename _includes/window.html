@@ -1,9 +1,22 @@
+{% assign topbar_name = include.name %}
+
+{% case type %}
+  {% when "explorer" %}
+    {% assign topbar_icon = "fa-solid fa-folder" %}
+  {% when "photos" %}
+    {% assign topbar_icon = "fa-solid fa-image" %}
+  {% when "videos" %}
+    {% assign topbar_icon = "fa-solid fa-film" %}
+  {% else %}
+    {% assign topbar_icon = include.iclass %}
+{% endcase %}
+
 {% if include.id %}
 <dialog id="window{{ include.id }}" class="w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
   <div id="topbar{{ include.id }}" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
     <div id="topbar__info{{ include.id }}">
-      <i id="topbar__info-icon{{ include.id }}" class="fa-solid fa-folder px-1">
-      </i><span id="topbar__info-name{{ include.id }}">{{ include.name }}</span>
+      <i id="topbar__info-icon{{ include.id }}" class="{{ topbar_icon }} px-1">
+      </i><span id="topbar__info-name{{ include.id }}">{{ topbar_name }}</span>
     </div>
     <div id="topbar__actions{{ include.id }}">
       <i id="topbar__actions-minimize{{ include.id }}" class="fa-solid fa-minus px-1"></i>
@@ -12,11 +25,13 @@
     </div>
   </div>
 
-  <div class="window__content flex flex-wrap p-3 gap-4">
-    {% for item in include.items %}
-      {% include app.html iclass=item.icon_class name=item.name description=item.description %}
-    {% endfor %}
-  </div>
+  {% if include.type == "explorer" %}
+    {% include window_content/explorer.html data=include.data %}
+  {% elsif include.type == "photos" %}
+    {% include window_content/photos.html data=include.data %}
+  {% elsif include.type == "videos" %}
+    {% include window_content/videos.html data=include.data %}
+  {% endif %}
 </dialog>
 
 <script>setupWindow({{ include.id }})</script>

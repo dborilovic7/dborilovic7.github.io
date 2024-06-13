@@ -38,3 +38,8 @@ dialog {
 [data-tooltip].wide-tooltip::after {
   width: 300%;
 }
+
+dialog:has(> div.photos), dialog:has(> div.videos) {
+  width: fit-content;
+  height: fit-content;
+}

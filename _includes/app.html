@@ -9,11 +9,14 @@
     </a>
 
   {% elsif include.action contains "open" %}
-    {% assign windowId = include.action | replace: "open[", "" | replace: "]", "" %}
+    {% assign typeWithId = include.action | replace: "open[", "" | replace: "]", "" %}
+    {% assign type = typeWithId | replace_regex: "\(\d+\)", "" %}
+    {% assign windowId = typeWithId | replace_regex: ".+\(", "" | replace: ")", "" %}
+
     <button id="open-btn{{ windowId }}">
       {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
     </button>
-    {% include window.html id=windowId name=include.name items=include.items %}
+    {% include window.html id=windowId iclass=include.iclass name=include.name type=type data=include.data %}
 
   {% else %}
     {% include app-base.html iclass=include.iclass name=include.name description=include.description %}

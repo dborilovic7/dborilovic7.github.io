@@ -1,4 +1,7 @@
-- Make a "photo viewer", "video viewer" and "file explorer" windows (different types of onclick actions for apps)
+- Fix bug: Tooltips are shown behind icons(desktop apps)
+- Stop playing a video when the video's window is closed(some kind of onClose)
+- Rewrite window logic (dialogs are currently nested inside elements which causes unwanted closing behavior)
+- Change how different types of windows are created (check for window type earlier/more separation?)?
 - Restyle the app
 - Change dialog position to absolute and update its code (dragging, clamping)
 - Make windows maximize and minimize functionalities
