@@ -5,7 +5,6 @@
 - Change dialog position to absolute and update its code (dragging, clamping)
 - Make windows maximize and minimize functionalities
 - Require double click for activating click actions? (+ enable activation with one click + enter)
-- Add favicon
 - Add drag'n'drop functionality (apps)
 - Make monochromatic themes
 - Fix app styling in windows if necessary
