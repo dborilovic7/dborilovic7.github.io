@@ -22,17 +22,19 @@ dialog {
   position: absolute;
   left: 50%;
   top: 100%;
-  transform: translateX(-50%) scale(var(--scale));
+  translate: -50%;
+  scale: var(--scale);
   width: 200%;
   padding: 0.25rem;
   border-radius: 8%;
   background-color: #eee;
+  z-index: 1;
 }
 
 [data-tooltip]:hover::after {
   --scale: 1;
   content: attr(data-tooltip);
-  transition: transform 100ms 600ms;
+  transition: scale 100ms 600ms;
 }
 
 [data-tooltip].wide-tooltip::after {
