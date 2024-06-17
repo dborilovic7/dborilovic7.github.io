@@ -15,8 +15,8 @@ function setupWindow(id) {
 
   openBtn && openBtn.addEventListener("click", () => dialog.show());
   topbarCloseBtn.addEventListener("click", () => dialog.close());
-  
   topbar.addEventListener("mousedown", onMouseDown);
+
   function onMouseDown(e) {
     if (!draggableElementIds.includes(e.target.id)) return;
 
@@ -44,5 +44,10 @@ function setupWindow(id) {
     if (dialog.offsetTop < 0) dialog.style.top = "0px";
     else if (dialog.offsetTop + topbarHeight > window.innerHeight)
       dialog.style.top = `${window.innerHeight - topbarHeight}px`;
+  }
+
+  dialog.onclose = e => {
+    const videoElement = e.target.querySelector("video");
+    videoElement?.pause();
   }
 }
