@@ -1,7 +1,7 @@
-- Rewrite window logic (dialogs are currently nested inside elements which causes unwanted closing behavior)
-- Change how different types of windows are created (check for window type earlier/more separation?)?
+- Make the app mobile-friendly
+- Change windows' starting position
 - Restyle the app
-- Change dialog position to absolute and update its code (dragging, clamping)
+- Change how different types of windows are created (check for window type earlier/more separation?)?
 - Make windows maximize and minimize functionalities
 - Require double click for activating click actions? (+ enable activation with one click + enter)
 - Add drag'n'drop functionality (apps)
@@ -18,7 +18,6 @@
 - Make another view for windows -> List view (with name, date etc. columns)
 - Make the start menu
 - Make a real email app and replace the mailto link with it?
-- Make the app mobile-friendly
 - Add a "properties" window for projects(all apps?) showing language used, date created etc.
 - When dragging a window, make sure that its z-index is higher than other windows
 - Optimize clock code (set interval to 1 min if seconds are not shown)

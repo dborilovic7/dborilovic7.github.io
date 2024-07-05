@@ -1,4 +1,5 @@
 function setupWindow(id) {
+  const desktop = document.getElementById("desktop");
   const openBtn = document.getElementById(`open-btn${id}`);
   const dialog = document.getElementById(`window${id}`);
   const topbar = document.getElementById(`topbar${id}`);
@@ -16,6 +17,7 @@ function setupWindow(id) {
   openBtn && openBtn.addEventListener("click", () => dialog.show());
   topbarCloseBtn.addEventListener("click", () => dialog.close());
   topbar.addEventListener("mousedown", onMouseDown);
+  desktop.appendChild(dialog);
 
   function onMouseDown(e) {
     if (!draggableElementIds.includes(e.target.id)) return;
@@ -28,22 +30,23 @@ function setupWindow(id) {
   }
 
   function onMouseMove(e) {
-    dialog.style.left = `${e.clientX - offsetX}px`;
-    dialog.style.top = `${e.clientY - offsetY}px`;
+    dialog.style.left = `${e.clientX- offsetX}px`;
+    dialog.style.top = `${e.clientY - offsetY - desktop.offsetTop}px`;
   }
 
   function onMouseUp(e) {
     document.removeEventListener("mousemove", onMouseMove);
+    const desktopHeight = desktop.clientHeight;
+    const topbarHeight = topbar.scrollHeight;
 
     const topbarHalfWidth = topbar.scrollWidth / 2;
     if (dialog.offsetLeft + topbarHalfWidth < 0) dialog.style.left = `-${topbarHalfWidth}px`;
     else if (dialog.offsetLeft + topbarHalfWidth > window.innerWidth)
       dialog.style.left = `${window.innerWidth - topbarHalfWidth}px`;
-
-    const topbarHeight = topbar.scrollHeight;
+    
     if (dialog.offsetTop < 0) dialog.style.top = "0px";
-    else if (dialog.offsetTop + topbarHeight > window.innerHeight)
-      dialog.style.top = `${window.innerHeight - topbarHeight}px`;
+    else if (dialog.offsetTop + topbarHeight > desktopHeight)
+      dialog.style.top = `${desktopHeight - topbarHeight}px`;
   }
 
   dialog.onclose = e => {

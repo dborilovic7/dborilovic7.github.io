@@ -18,8 +18,8 @@
   <body class="flex justify-center items-center h-screen bg-black">
     <div id="screen" class="w-full my-auto aspect-video
   [max-height:_calc(100vh_-_var(--taskbar-height))] select-none">
-  <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-1 p-1 grid-flow-col
-    items-center w-full h-full bg-emerald-300">
+  <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-1 p-1 grid-flow-col items-center w-full h-full
+    relative overflow-hidden bg-emerald-300">
     <p class="temp-notice absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3 text-xl md:text-3xl lg:text-5xl
       text-center opacity-25">
       More project demos coming soon...
@@ -43,7 +43,7 @@
 
 
 
-<dialog id="window1" class="w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
+<dialog id="window1" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
   <div id="topbar1" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
     <div id="topbar__info1">
       <i id="topbar__info-icon1" class="fa-solid fa-folder px-1">
@@ -79,7 +79,7 @@
     
     
 
-    <button id="open-btn4">
+    <button id="open-btn3">
       <i class="fa-solid fa-eye wide-tooltip text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
  data-tooltip="Computer vision mining bot for the COIN app written in Python."></i>
 <p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">Coin Vision</p>
@@ -89,16 +89,16 @@
 
 
 
-<dialog id="window4" class="w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
-  <div id="topbar4" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
-    <div id="topbar__info4">
-      <i id="topbar__info-icon4" class="fa-solid fa-film px-1">
-      </i><span id="topbar__info-name4">Coin Vision</span>
+<dialog id="window3" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
+  <div id="topbar3" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
+    <div id="topbar__info3">
+      <i id="topbar__info-icon3" class="fa-solid fa-film px-1">
+      </i><span id="topbar__info-name3">Coin Vision</span>
     </div>
-    <div id="topbar__actions4">
-      <i id="topbar__actions-minimize4" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize4" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close4" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions3">
+      <i id="topbar__actions-minimize3" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize3" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close3" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -112,7 +112,7 @@
   
 </dialog>
 
-<script>setupWindow(4)</script>
+<script>setupWindow(3)</script>
 
 
   
@@ -138,7 +138,7 @@
     
     
 
-    <button id="open-btn3">
+    <button id="open-btn4">
       <i class="fa-solid fa-pizza-slice wide-tooltip text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
  data-tooltip="College capstone project - a website for ordering pizza."></i>
 <p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">NetPizza</p>
@@ -148,16 +148,16 @@
 
 
 
-<dialog id="window3" class="w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
-  <div id="topbar3" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
-    <div id="topbar__info3">
-      <i id="topbar__info-icon3" class="fa-solid fa-image px-1">
-      </i><span id="topbar__info-name3">NetPizza</span>
+<dialog id="window4" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
+  <div id="topbar4" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
+    <div id="topbar__info4">
+      <i id="topbar__info-icon4" class="fa-solid fa-image px-1">
+      </i><span id="topbar__info-name4">NetPizza</span>
     </div>
-    <div id="topbar__actions3">
-      <i id="topbar__actions-minimize3" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize3" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close3" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions4">
+      <i id="topbar__actions-minimize4" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize4" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close4" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -168,7 +168,7 @@
   
 </dialog>
 
-<script>setupWindow(3)</script>
+<script>setupWindow(4)</script>
 
 
   
@@ -202,7 +202,7 @@
 
 
 
-<dialog id="window2" class="w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
+<dialog id="window2" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg z-10">
   <div id="topbar2" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
     <div id="topbar__info2">
       <i id="topbar__info-icon2" class="fa-solid fa-folder px-1">
