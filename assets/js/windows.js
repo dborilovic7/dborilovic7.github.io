@@ -16,26 +16,26 @@ function setupWindow(id) {
 
   openBtn && openBtn.addEventListener("click", () => dialog.show());
   topbarCloseBtn.addEventListener("click", () => dialog.close());
-  topbar.addEventListener("mousedown", onMouseDown);
+  topbar.addEventListener("pointerdown", onPointerDown);
   desktop.appendChild(dialog);
 
-  function onMouseDown(e) {
+  function onPointerDown(e) {
     if (!draggableElementIds.includes(e.target.id)) return;
 
     offsetX = e.offsetX;
     offsetY = e.offsetY;
 
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("mouseup", onMouseUp);
+    document.addEventListener("pointermove", onPointerMove);
+    document.addEventListener("pointerup", onPointerUp);
   }
 
-  function onMouseMove(e) {
+  function onPointerMove(e) {
     dialog.style.left = `${e.clientX- offsetX}px`;
     dialog.style.top = `${e.clientY - offsetY - desktop.offsetTop}px`;
   }
 
-  function onMouseUp(e) {
-    document.removeEventListener("mousemove", onMouseMove);
+  function onPointerUp(e) {
+    document.removeEventListener("pointermove", onPointerMove);
     const desktopHeight = desktop.clientHeight;
     const topbarHeight = topbar.scrollHeight;
 
