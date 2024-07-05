@@ -16,6 +16,7 @@ function setupWindow(id) {
   openBtn && openBtn.addEventListener("click", () => dialog.show());
   topbarCloseBtn.addEventListener("click", () => dialog.close());
   topbar.addEventListener("mousedown", onMouseDown);
+  document.body.appendChild(dialog);
 
   function onMouseDown(e) {
     if (!draggableElementIds.includes(e.target.id)) return;
