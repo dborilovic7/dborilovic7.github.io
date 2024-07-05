@@ -1,6 +1,5 @@
-- Change how different types of windows are created (check for window type earlier/more separation?)?
 - Restyle the app
-- Change dialog position to absolute and update its code (dragging, clamping)
+- Change how different types of windows are created (check for window type earlier/more separation?)?
 - Make windows maximize and minimize functionalities
 - Require double click for activating click actions? (+ enable activation with one click + enter)
 - Add drag'n'drop functionality (apps)
