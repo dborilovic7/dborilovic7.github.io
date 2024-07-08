@@ -1,5 +1,7 @@
 - Restyle the app
+- Set image/video max width/height so portfolio imgs/videos show up properly on all screen sizes
 - Make the portrait version of the app (mobile OS)
+- Make the app mobile friendly (for example, tooltips)
 - Change windows' starting position
 - Change how different types of windows are created (check for window type earlier/more separation?)?
 - Make windows maximize and minimize functionalities
