@@ -1,3 +1,5 @@
+// Live clock
+const UPDATE_INTERVAL = 1000;
 const dateElement = document.getElementById("taskbar-date");
 const timeElement = document.getElementById("taskbar-time");
 
@@ -10,4 +12,13 @@ const displayTime = () => {
   timeElement.innerText = time;
 }
 
-setInterval(displayTime, 1000);
+setInterval(displayTime, UPDATE_INTERVAL);
+
+
+// Dismiss rotate device 'notification'
+const removeOverlayButton = document.getElementById("remove-overlay");
+const rotateDeviceOverlay = document.getElementById("rotate-device-overlay");
+
+removeOverlayButton.addEventListener("click", () => {
+  rotateDeviceOverlay.remove();
+});
