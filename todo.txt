@@ -1,6 +1,6 @@
-- Make the app mobile-friendly
-- Change windows' starting position
 - Restyle the app
+- Make the portrait version of the app (mobile OS)
+- Change windows' starting position
 - Change how different types of windows are created (check for window type earlier/more separation?)?
 - Make windows maximize and minimize functionalities
 - Require double click for activating click actions? (+ enable activation with one click + enter)
@@ -19,5 +19,5 @@
 - Make the start menu
 - Make a real email app and replace the mailto link with it?
 - Add a "properties" window for projects(all apps?) showing language used, date created etc.
-- When dragging a window, make sure that its z-index is higher than other windows
+- When dragging AND showing a window, make sure that its z-index is higher than other windows
 - Optimize clock code (set interval to 1 min if seconds are not shown)
