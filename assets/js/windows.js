@@ -1,3 +1,5 @@
+let windows = [];
+
 function setupWindow(id) {
   const desktop = document.getElementById("desktop");
   const openBtn = document.getElementById(`open-btn${id}`);
@@ -14,12 +16,18 @@ function setupWindow(id) {
   ];
   let offsetX, offsetY;
 
-  openBtn && openBtn.addEventListener("click", () => dialog.show());
+  openBtn && openBtn.addEventListener("click", () => {
+    reassignZIndices(dialog);
+    dialog.show();
+  });
   topbarCloseBtn.addEventListener("click", () => dialog.close());
   topbar.addEventListener("pointerdown", onPointerDown);
   desktop.appendChild(dialog);
+  windows.push(dialog);
 
   function onPointerDown(e) {
+    reassignZIndices(dialog);
+
     if (!draggableElementIds.includes(e.target.id)) return;
 
     offsetX = e.offsetX;
@@ -53,4 +61,18 @@ function setupWindow(id) {
     const videoElement = e.target.querySelector("video");
     videoElement?.pause();
   }
+}
+
+function reassignZIndices(clickedDialog) {
+  const clickedDialogIndex = windows.indexOf(clickedDialog);
+  if(clickedDialogIndex === windows.length - 1) return;
+
+  if(clickedDialogIndex > -1) {
+    const win = windows.splice(clickedDialogIndex, 1)[0];
+    windows.push(win);
+  }
+
+  windows.forEach((win, i) => {
+    win.style.zIndex = 10 + i;
+  });
 }
