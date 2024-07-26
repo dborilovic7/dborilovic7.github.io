@@ -29,7 +29,7 @@ dialog {
   width: 200%;
   padding: 0.25rem;
   border-radius: 8%;
-  background-color: #eee;
+  background-color: white;
   z-index: 1;
 }
 
@@ -55,6 +55,5 @@ dialog:has(> div.photos), dialog:has(> div.videos) {
 }
 
 img, video {
-  border: 4px solid black;
   object-fit: contain;
 }
