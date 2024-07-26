@@ -7,6 +7,7 @@
 
 :root {
   --taskbar-height: 4rem;
+  --topbar-height: 27px;
 }
 
 dialog {
@@ -44,5 +45,16 @@ dialog {
 
 dialog:has(> div.photos), dialog:has(> div.videos) {
   width: fit-content;
-  height: fit-content;
+  height: auto;
+  max-width: 90%;
+  max-height: calc(90vh - var(--taskbar-height));
+}
+
+.window__content {
+  max-height: calc(90vh - var(--taskbar-height) - var(--topbar-height));
+}
+
+img, video {
+  border: 4px solid black;
+  object-fit: contain;
 }

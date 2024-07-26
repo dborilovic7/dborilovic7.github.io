@@ -22,12 +22,11 @@ function setupWindow(id) {
   });
   topbarCloseBtn.addEventListener("click", () => dialog.close());
   topbar.addEventListener("pointerdown", onPointerDown);
+  dialog.addEventListener("pointerdown", () => reassignZIndices(dialog));
   desktop.appendChild(dialog);
   windows.push(dialog);
 
   function onPointerDown(e) {
-    reassignZIndices(dialog);
-
     if (!draggableElementIds.includes(e.target.id)) return;
 
     offsetX = e.offsetX;
