@@ -25,9 +25,9 @@
   <button id="remove-overlay" class="text-lg sm:text-2xl text-white underline">I don't want to</button>
 </div>
 <div id="screen" class="w-full my-auto aspect-video
-  [max-height:_calc(100vh_-_var(--taskbar-height))] select-none touch-none">
-  <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-1 p-1 grid-flow-col items-center w-full h-full
-    relative overflow-hidden bg-emerald-300">
+  [max-height:_calc(100vh_-_var(--taskbar-height))] select-none touch-none text-cerulean-950">
+  <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-1 p-2 grid-flow-col items-center w-full h-full
+    relative overflow-hidden bg-cerulean-50">
     <p class="temp-notice absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3 text-xl md:text-3xl lg:text-5xl
       text-center opacity-25">
       More project demos coming soon...
@@ -42,17 +42,17 @@
     
 
     <button id="open-btn1">
-      <i class="fa-solid fa-folder-closed text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+      <i class="fa-solid fa-folder-closed text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Take a look at my projects"></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">Projects</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Projects</p>
     </button>
     
 
 
 
 
-<dialog id="window1" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg">
-  <div id="topbar1" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
+<dialog id="window1" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950">
+  <div id="topbar1" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
     <div id="topbar__info1">
       <i id="topbar__info-icon1" class="fa-solid fa-folder px-1">
       </i><span id="topbar__info-name1">Projects</span>
@@ -72,9 +72,9 @@
     ">
 
   
-    <i class="fa-solid fa-shield-halved wide-tooltip text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+    <i class="fa-solid fa-shield-halved wide-tooltip text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Browser-based MMORPG with turn-based combat.(Collab)"></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">Gladiators</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Gladiators</p>
   
 </div>
   
@@ -88,17 +88,17 @@
     
 
     <button id="open-btn3">
-      <i class="fa-solid fa-eye wide-tooltip text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+      <i class="fa-solid fa-eye wide-tooltip text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Computer vision mining bot for the COIN app written in Python."></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">Coin Vision</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Coin Vision</p>
     </button>
     
 
 
 
 
-<dialog id="window3" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg">
-  <div id="topbar3" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
+<dialog id="window3" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950">
+  <div id="topbar3" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
     <div id="topbar__info3">
       <i id="topbar__info-icon3" class="fa-solid fa-film px-1">
       </i><span id="topbar__info-name3">Coin Vision</span>
@@ -112,7 +112,7 @@
 
   
     <div class="window__content videos flex h-full bg-black">
-  <video width="1280" height="720" controls autoplay muted>
+  <video width="1280" height="720" controls autoplay muted class="border-4 border-black">
     <source src="/assets/videos/coin_vision_ads.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -131,9 +131,9 @@
     ">
 
   
-    <i class="fa-solid fa-globe wide-tooltip text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+    <i class="fa-solid fa-globe wide-tooltip text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Your torrent search engine!"></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">TorrentBay</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">TorrentBay</p>
   
 </div>
   
@@ -147,17 +147,17 @@
     
 
     <button id="open-btn4">
-      <i class="fa-solid fa-pizza-slice wide-tooltip text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+      <i class="fa-solid fa-pizza-slice wide-tooltip text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="College capstone project - a website for ordering pizza."></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">NetPizza</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">NetPizza</p>
     </button>
     
 
 
 
 
-<dialog id="window4" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg">
-  <div id="topbar4" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
+<dialog id="window4" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950">
+  <div id="topbar4" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
     <div id="topbar__info4">
       <i id="topbar__info-icon4" class="fa-solid fa-image px-1">
       </i><span id="topbar__info-name4">NetPizza</span>
@@ -171,7 +171,7 @@
 
   
     <div class="window__content photos flex h-full bg-black">
-  <img src="/assets/images/netpizza_home_eng_demo.png" alt="NetPizza Homepage" width="1024" height="576">
+  <img src="/assets/images/netpizza_home_eng_demo.png" alt="NetPizza Homepage" width="1024" height="576" class="border-4 border-black">
 </div>
   
 </dialog>
@@ -201,17 +201,17 @@
     
 
     <button id="open-btn2">
-      <i class="fa-solid fa-folder-closed text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+      <i class="fa-solid fa-folder-closed text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Nothing here yet"></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">Blog</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Blog</p>
     </button>
     
 
 
 
 
-<dialog id="window2" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg">
-  <div id="topbar2" class="flex justify-between px-1 pb-0.5 select-none border-b border-gray-300">
+<dialog id="window2" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950">
+  <div id="topbar2" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
     <div id="topbar__info2">
       <i id="topbar__info-icon2" class="fa-solid fa-folder px-1">
       </i><span id="topbar__info-name2">Blog</span>
@@ -243,9 +243,9 @@
   
     
     <a href="https://www.linkedin.com/in/dominik-borilovi%C4%87-4b92a1175/" target="_blank">
-      <i class="fa-brands fa-linkedin text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+      <i class="fa-brands fa-linkedin text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Visit my LinkedIn profile page"></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">LinkedIn</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">LinkedIn</p>
     </a>
 
   
@@ -257,9 +257,9 @@
   
     
     <a href="https://github.com/dborilovic7" target="_blank">
-      <i class="fa-brands fa-github text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+      <i class="fa-brands fa-github text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Checkout my GitHub profile"></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">GitHub</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">GitHub</p>
     </a>
 
   
@@ -271,17 +271,17 @@
   
     
     <a href="mailto:dokikik@gmail.com" target="_blank">
-      <i class="fa-solid fa-envelope text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl relative"
+      <i class="fa-solid fa-envelope text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Contact me"></i>
-<p class="text-[8px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl max-w-[200%]">Mail</p>
+<p class="text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Mail</p>
     </a>
 
   
 </div>
   </div>
 
-  <div id="taskbar" class="bg-slate-700 text-emerald-50 w-full h-[--taskbar-height] flex justify-between">
-    <button class="px-4 mr-1 border-r border-slate-400">Menu</button>
+  <div id="taskbar" class="bg-cerulean-400 w-full h-[--taskbar-height] flex justify-between font-medium">
+    <button class="px-4 mr-1 border-r border-cerulean-500">Menu</button>
     <div class="my-auto px-4">
       <span id="taskbar-date" class="text-md mr-2"></span>
       <span id="taskbar-time" class="text-md"></span>
