@@ -1,5 +1,4 @@
 - Restyle the app
-- Set image/video max width/height so portfolio imgs/videos show up properly on all screen sizes
 - Make the portrait version of the app (mobile OS)
 - Make the app mobile friendly (for example, tooltips)
 - Change windows' starting position
@@ -21,5 +20,6 @@
 - Make the start menu
 - Make a real email app and replace the mailto link with it?
 - Add a "properties" window for projects(all apps?) showing language used, date created etc.
-- When dragging AND showing a window, make sure that its z-index is higher than other windows
 - Optimize clock code (set interval to 1 min if seconds are not shown)
+- CSS cleanup (remove unnecessary styles)
+- Fix blank horizontal space on images and videos for mobile devices
