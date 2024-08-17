@@ -18,6 +18,17 @@
     </button>
     {% include window.html id=windowId iclass=include.iclass name=include.name type=type data=include.data %}
 
+  {% elsif include.action contains "replace" %}
+    {% assign typeWithIds = include.action | replace: "replace[", "" | replace: "]", "" %}
+    {% assign type = typeWithIds | replace_regex: "\(.+\)", "" %}
+    {% assign windowId = typeWithIds | replace_regex: ".+\(", "" | replace_regex: ",.+\)", "" %}
+    {% assign replacementId = typeWithIds | replace_regex: ".+\,", "" | replace: ")", "" %}
+    
+    <button class="replace-btn" data-window-id="{{ windowId }}" data-replacement-id="{{ replacementId }}">
+      {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
+    </button>
+    {% include window-replacement.html id=replacementId iclass=include.iclass name=include.name type=type data=include.data %}
+
   {% else %}
     {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
   {% endif %}

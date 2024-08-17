@@ -4,7 +4,7 @@
   {% when "explorer" %}
     {% assign topbar_icon = "fa-solid fa-folder" %}
   {% when "photos" %}
-    {% assign topbar_icon = "fa-solid fa-image" %}
+    {% assign topbar_icon = "fa-solid fa-images" %}
   {% when "videos" %}
     {% assign topbar_icon = "fa-solid fa-film" %}
   {% else %}
@@ -16,7 +16,11 @@
   <div id="topbar{{ include.id }}" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
     <div id="topbar__info{{ include.id }}">
       <i id="topbar__info-icon{{ include.id }}" class="{{ topbar_icon }} px-1">
-      </i><span id="topbar__info-name{{ include.id }}">{{ topbar_name }}</span>
+      </i><span id="topbar__info-name{{ include.id }}" class="mr-1">{{ topbar_name }}</span>
+      {% if include.type == "explorer" %}
+        <i id="topbar__info-back{{ include.id }}" class="fa-solid fa-circle-arrow-left"></i>
+        <i id="topbar__info-forward{{ include.id }}" class="fa-solid fa-circle-arrow-right"></i>
+      {% endif %}
     </div>
     <div id="topbar__actions{{ include.id }}">
       <i id="topbar__actions-minimize{{ include.id }}" class="fa-solid fa-minus px-1"></i>

@@ -1,0 +1,28 @@
+{% assign topbar_name = include.name %}
+
+{% case type %}
+  {% when "explorer" %}
+    {% assign topbar_icon = "fa-solid fa-folder" %}
+  {% when "photos" %}
+    {% assign topbar_icon = "fa-solid fa-images" %}
+  {% when "videos" %}
+    {% assign topbar_icon = "fa-solid fa-film" %}
+  {% else %}
+    {% assign topbar_icon = include.iclass %}
+{% endcase %}
+
+{% if include.id %}
+<div id="topbar-replacement{{ include.id }}" style="display: none;">
+  <i id="topbar__info-icon{{ include.id }}" class="{{ topbar_icon }} px-1">
+  </i><span id="topbar__info-name{{ include.id }}" class="mr-1">{{ topbar_name }}</span>
+</div>
+<div id="window-replacement{{ include.id }}" style="display: none;">
+  {% if include.type == "explorer" %}
+    {% include window_content/explorer.html data=include.data %}
+  {% elsif include.type == "photos" %}
+    {% include window_content/photos.html data=include.data %}
+  {% elsif include.type == "videos" %}
+    {% include window_content/videos.html data=include.data %}
+  {% endif %}
+</div>
+{% endif %}

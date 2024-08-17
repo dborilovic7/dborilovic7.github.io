@@ -22,10 +22,35 @@
     "name": "NetPizza",
     "description": "College capstone project - a website for ordering pizza.",
     "icon_class": "fa-solid fa-pizza-slice wide-tooltip",
-    "action": "open[photos(4)]",
-    "data": {
-      "src": "/assets/images/netpizza_home_eng_demo.png",
-      "alt": "NetPizza Homepage"
-    }
+    "action": "replace[explorer(1,4)]",
+    "data": [
+      {
+        "name": "Home",
+        "icon_class": "fa-solid fa-image",
+        "action": "open[photos(5)]",
+        "data": {
+          "src": "/assets/images/netpizza/netpizza_home_eng_mid.png",
+          "alt": "NetPizza Homepage"
+        }
+      },
+      {
+        "name": "Login",
+        "icon_class": "fa-solid fa-image",
+        "action": "open[photos(6)]",
+        "data": {
+          "src": "/assets/images/netpizza/netpizza_login_eng_mid.png",
+          "alt": "NetPizza login page"
+        }
+      },
+      {
+        "name": "Signup",
+        "icon_class": "fa-solid fa-image",
+        "action": "open[photos(7)]",
+        "data": {
+          "src": "/assets/images/netpizza/netpizza_signup_eng_mid.png",
+          "alt": "NetPizza sign up page"
+        }
+      }
+    ]
   }
 ]
