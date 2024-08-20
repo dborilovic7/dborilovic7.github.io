@@ -1,7 +1,6 @@
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Make the app mobile friendly (for example, tooltips)
-- Change windows' starting position
 - Change how different types of windows are created (check for window type earlier/more separation?)?
 - Make windows maximize and minimize functionalities
 - Require double click for activating click actions? (+ enable activation with one click + enter)
