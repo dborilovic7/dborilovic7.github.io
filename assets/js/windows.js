@@ -36,6 +36,7 @@ function setupWindow(id) {
     ],
     historyPointer: 0
   };
+
   let offsetX, offsetY;
 
   openBtn && addAnEventListener(id, openBtn, "click", () => {
@@ -58,6 +59,21 @@ function setupWindow(id) {
 
   desktop.appendChild(dialog);
   windows.push(windowObject);
+
+  const startingX = window.innerWidth / 2 - getOffsetWidth(dialog) / 2;
+  dialog.style.left = `${startingX}px`;
+
+  function getOffsetWidth(dialog) {
+    dialog.style.opacity = "0";
+    dialog.show();
+
+    const dialogOffsetWitdh = dialog.offsetWidth;
+
+    dialog.close();
+    dialog.style.opacity = "";
+
+    return dialogOffsetWitdh;
+  }
 
   function onPointerDown(e) {
     if (!draggableElementIds.includes(e.target.id)) return;
