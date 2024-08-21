@@ -22,3 +22,5 @@
 - CSS cleanup (remove unnecessary styles)
 - Fix blank horizontal space on images and videos for mobile devices
 - Add a "glass windows" option to monochromatic themes (makes windows a bit transparent)
+- Add display:grid to window content
+- Optimize menu code if possible
