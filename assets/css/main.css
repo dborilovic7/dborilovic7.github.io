@@ -54,6 +54,10 @@ dialog:has(> div.photos), dialog:has(> div.videos) {
   max-height: calc(90vh - var(--taskbar-height) - var(--topbar-height));
 }
 
+#menu li:last-child {
+  border: 0;
+}
+
 img, video {
   object-fit: contain;
 }
