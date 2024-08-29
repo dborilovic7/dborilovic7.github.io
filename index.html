@@ -31,25 +31,8 @@ layout: default
     {% include app.html iclass="fa-solid fa-envelope" name="Mail" description="Contact me" col=10 row=6
       action="link[mailto:dokikik@gmail.com]" %}
 
-    <dialog id="menu" class="absolute bottom-0 z-20 bg-cerulean-400 w-fit">
-      <ul class="absolute bottom-0 contents text-[8px] sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
-        <li class="flex items-center gap-2 px-3 py-2 w-full border-b border-cerulean-500">
-          <i class="fa-solid fa-gear text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"></i>
-          <span>Settings</span>
-        </li>
-        <li class="flex items-center gap-2 px-3 py-2 w-full border-b border-cerulean-500">
-          <i class="fa-solid fa-power-off text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"></i>
-          <span>Shutdown</span>
-        </li>
-      </ul>
-    </dialog>
+    {% include menu.html %}
   </div>
 
-  <div id="taskbar" class="bg-cerulean-500 w-full h-[--taskbar-height] flex justify-between font-medium">
-    <button id="menu-btn" class="px-4 mr-1 border-r border-cerulean-600">Menu</button>
-    <div class="my-auto px-4">
-      <span id="taskbar-date" class="text-md mr-2"></span>
-      <span id="taskbar-time" class="text-md"></span>
-    </div>
-  </div>
+  {% include taskbar.html %}
 </div>
