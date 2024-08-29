@@ -1,5 +1,5 @@
-- Ideas for menu options: About, Help, Find
 - Make a guide
+- Ideas for menu options: About, Help, Find
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Make the app mobile friendly (for example, tooltips)
