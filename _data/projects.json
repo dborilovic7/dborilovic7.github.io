@@ -1,10 +1,5 @@
 [
   {
-    "name": "Gladiators",
-    "description": "Browser-based MMORPG with turn-based combat.(Collab)",
-    "icon_class": "fa-solid fa-shield-halved wide-tooltip"
-  },
-  {
     "name": "Coin Vision",
     "description": "Computer vision mining bot for the COIN app written in Python.",
     "icon_class": "fa-solid fa-eye wide-tooltip",
