@@ -64,12 +64,14 @@ function setupWindow(id) {
   dialog.style.left = `${startingX}px`;
 
   function getOffsetWidth(dialog) {
+    const wasDialogClosed = !dialog.open;
+
     dialog.style.opacity = "0";
     dialog.show();
 
     const dialogOffsetWitdh = dialog.offsetWidth;
 
-    dialog.close();
+    wasDialogClosed && dialog.close();
     dialog.style.opacity = "";
 
     return dialogOffsetWitdh;
@@ -198,7 +200,7 @@ function addToWindowHistory(replacementId, dialog, topbar, backButton, forwardBu
 
 function replaceContent(dialog, topbar, newTopbar, newContent) {
   const topbarInfo = topbar.children[0];
-  let backButton = topbarInfo.children[2];
+  const backButton = topbarInfo.children[2];
   const forwardButton = topbarInfo.children[3];
 
   dialog.innerHTML = "";
