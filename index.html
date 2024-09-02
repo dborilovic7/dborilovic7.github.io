@@ -19,15 +19,22 @@ layout: default
       text-center opacity-25">
       More project demos coming soon...
     </p>
+
+    {% include window.html id=1 iclass="fa-solid fa-book-open" name="Guide" type="html" data=site.data.content.guide open=true
+      contentClass="flex flex-col gap-4 h-full-win-content overflow-auto" %}
+
     {% include app.html iclass="fa-solid fa-folder-closed" name="Projects" description="Take a look at my projects"
-      action="open[explorer(1)]" data=site.data.projects %}
+      action="open[explorer(2)]" data=site.data.projects %}
+
     {% include app.html iclass="fa-solid fa-folder-closed" name="Blog" description="Nothing here yet" col=2
-      action="open[explorer(2)]" %}
+      action="open[explorer(3)]" %}
 
     {% include app.html iclass="fa-brands fa-linkedin" name="LinkedIn" description="Visit my LinkedIn profile page" col=10
       action="link[https://www.linkedin.com/in/dominik-borilovi%C4%87-4b92a1175/]" %}
+
     {% include app.html iclass="fa-brands fa-github" name="GitHub" description="Checkout my GitHub profile" col=10 row=2
       action="link[https://github.com/dborilovic7]" %}
+
     {% include app.html iclass="fa-solid fa-envelope" name="Mail" description="Contact me" col=10 row=6
       action="link[mailto:dokikik@gmail.com]" %}
 

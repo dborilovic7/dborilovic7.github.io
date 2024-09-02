@@ -12,7 +12,8 @@
 {% endcase %}
 
 {% if include.id %}
-<dialog id="window{{ include.id }}" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950">
+<dialog id="window{{ include.id }}" class="absolute w-1/4 lg:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+  {% if include.open %}open{% endif %}>
   <div id="topbar{{ include.id }}" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
     <div id="topbar__info{{ include.id }}">
       <i id="topbar__info-icon{{ include.id }}" class="{{ topbar_icon }} px-1">
@@ -35,6 +36,8 @@
     {% include window_content/photos.html data=include.data %}
   {% elsif include.type == "videos" %}
     {% include window_content/videos.html data=include.data %}
+  {% elsif include.type == "html" %}
+    {% include window_content/html.html data=include.data contentClass=include.contentClass %}
   {% endif %}
 </dialog>
 

@@ -22,6 +22,9 @@ module.exports = {
           900: '#032730',
           950: '#01161B'
         }
+      },
+      height: {
+        'full-win-content': 'calc(100% - var(--topbar-height))'
       }
     }
   },

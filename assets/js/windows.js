@@ -64,12 +64,14 @@ function setupWindow(id) {
   dialog.style.left = `${startingX}px`;
 
   function getOffsetWidth(dialog) {
+    const wasDialogClosed = !dialog.open;
+
     dialog.style.opacity = "0";
     dialog.show();
 
     const dialogOffsetWitdh = dialog.offsetWidth;
 
-    dialog.close();
+    wasDialogClosed && dialog.close();
     dialog.style.opacity = "";
 
     return dialogOffsetWitdh;

@@ -1,7 +1,7 @@
-- Make a guide
 - Ideas for menu options: About, Help, Find
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
+- Change the font of the whole site
 - Make the app mobile friendly (for example, tooltips)
 - Change how different types of windows are created (check for window type earlier/more separation?)?
 - Make windows maximize and minimize functionalities

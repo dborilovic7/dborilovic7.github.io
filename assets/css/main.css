@@ -61,3 +61,83 @@ dialog:has(> div.photos), dialog:has(> div.videos) {
 img, video {
   object-fit: contain;
 }
+
+#window1 {
+  width: 75%;
+  height: 75%;
+  max-width: fit-content;
+}
+
+#window1 h1 {
+  align-self: center;
+  padding: 1rem;
+}
+
+#window1 p {
+  font-size: 0.5rem;
+}
+
+/* sm */
+@media(min-width: 640px) {
+  #window1 h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  #window1 p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+/* md */
+@media(min-width: 768px) {
+  #window1 h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  #window1 p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* lg */
+@media(min-width: 1024px) {
+  #window1 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  #window1 p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* xl */
+@media(min-width: 1280px) {
+  #window1 h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  #window1 p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* 2xl */
+@media(min-width: 1536px) {
+  #window1 h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  #window1 p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
