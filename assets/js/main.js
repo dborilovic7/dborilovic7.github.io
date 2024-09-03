@@ -22,3 +22,28 @@ const rotateDeviceOverlay = document.getElementById("rotate-device-overlay");
 removeOverlayButton.addEventListener("click", () => {
   rotateDeviceOverlay.remove();
 });
+
+// Shutdown
+const shutdownBtn = document.getElementById("shutdown-btn");
+const shutdownOverlay = document.getElementById("shutdown-overlay");
+const powerOnBtn = document.getElementById("power-on-btn");
+
+shutdownBtn.addEventListener("click", () => {
+  shutdownOverlay.style.display = "block";
+  shutdownOverlay.offsetHeight;
+  shutdownOverlay.classList.add("open");
+
+  setTimeout(() => {
+    windows.forEach(win => {
+      const dialog = win.element;
+  
+      dialog.close();
+      setTimeout(() => centerDialog(dialog), 500);
+    });
+  }, 500);
+});
+
+powerOnBtn.addEventListener("click", () => {
+  shutdownOverlay.classList.remove("open");
+  shutdownOverlay.style.display = "";
+});

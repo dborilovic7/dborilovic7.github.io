@@ -1,4 +1,4 @@
-- Ideas for menu options: Guide, Find/Search
+- Ideas for menu options: Find/Search
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Change the font of the whole site
@@ -28,3 +28,8 @@
 - Optimize menu code if possible
 - Check dialog getOffsetWidth for redundant code
 - Add sounds
+- DRY up "app" and menu-"item" includes
+- Separate window includes from apps?
+- Power on button glow animation?
+- Change guide window's starting scale(animation)
+- Add text to power on button?
