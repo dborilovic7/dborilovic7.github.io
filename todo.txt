@@ -1,4 +1,4 @@
-- Ideas for menu options: About, Help, Find
+- Ideas for menu options: Guide, Find/Search
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Change the font of the whole site
@@ -26,3 +26,5 @@
 - Add a "glass windows" option to monochromatic themes (makes windows a bit transparent)
 - Add display:grid to window content
 - Optimize menu code if possible
+- Check dialog getOffsetWidth for redundant code
+- Add sounds
