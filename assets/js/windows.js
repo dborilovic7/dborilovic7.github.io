@@ -66,13 +66,17 @@ function setupWindow(id) {
   function getOffsetWidth(dialog) {
     const wasDialogClosed = !dialog.open;
 
-    dialog.style.opacity = "0";
+    // dialog.style.opacity = "0";
+    dialog.style.transition = "none";
     dialog.show();
 
     const dialogOffsetWitdh = dialog.offsetWidth;
 
     wasDialogClosed && dialog.close();
-    dialog.style.opacity = "";
+
+    // dialog.style.opacity = "";
+    dialog.offsetHeight;
+    dialog.style.transition = "";
 
     return dialogOffsetWitdh;
   }

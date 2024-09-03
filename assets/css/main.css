@@ -8,11 +8,44 @@
 :root {
   --taskbar-height: 4rem;
   --topbar-height: 27px;
+  --dialog-start-opacity: 0;
+  --dialog-end-opacity: 1;
+  --dialog-start-scale: 0.8;
+  --dialog-end-scale: 1;
 }
 
 dialog {
   margin: 0;
-  position: fixed;
+  scale: var(--dialog-start-scale);
+  opacity: var(--dialog-start-opacity);
+  transition: display 100ms allow-discrete;
+  animation: fade-out 100ms forwards;
+}
+
+dialog[open] {
+  animation: fade-in 100ms forwards;
+}
+
+@keyframes fade-in {
+  from {
+    scale: var(--dialog-start-scale);
+    opacity: var(--dialog-start-opacity);
+  }
+  to {
+    scale: var(--dialog-end-scale);
+    opacity: var(--dialog-end-opacity);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    scale: var(--dialog-end-scale);
+    opacity: var(--dialog-end-opacity);
+  }
+  to {
+    scale: var(--dialog-start-scale);
+    opacity: var(--dialog-start-opacity);
+  }
 }
 
 [data-tooltip]::after {
@@ -66,6 +99,11 @@ img, video {
   width: 75%;
   height: 75%;
   max-width: fit-content;
+}
+
+#window1[open] {
+  --dialog-start-scale: 0.25;
+  animation: fade-in 1s 1s forwards;
 }
 
 #window1 h1 {
