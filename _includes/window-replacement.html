@@ -23,6 +23,8 @@
     {% include window_content/photos.html data=include.data %}
   {% elsif include.type == "videos" %}
     {% include window_content/videos.html data=include.data %}
+  {% elsif include.type == "html" %}
+    {% include window_content/html.html data=include.data contentClass=include.contentClass %}
   {% endif %}
 </div>
 {% endif %}

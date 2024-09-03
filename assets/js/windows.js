@@ -60,26 +60,7 @@ function setupWindow(id) {
   desktop.appendChild(dialog);
   windows.push(windowObject);
 
-  const startingX = window.innerWidth / 2 - getOffsetWidth(dialog) / 2;
-  dialog.style.left = `${startingX}px`;
-
-  function getOffsetWidth(dialog) {
-    const wasDialogClosed = !dialog.open;
-
-    // dialog.style.opacity = "0";
-    dialog.style.transition = "none";
-    dialog.show();
-
-    const dialogOffsetWitdh = dialog.offsetWidth;
-
-    wasDialogClosed && dialog.close();
-
-    // dialog.style.opacity = "";
-    dialog.offsetHeight;
-    dialog.style.transition = "";
-
-    return dialogOffsetWitdh;
-  }
+  centerDialog(dialog);
 
   function onPointerDown(e) {
     if (!draggableElementIds.includes(e.target.id)) return;
@@ -115,6 +96,30 @@ function setupWindow(id) {
     const videoElement = e.target.querySelector("video");
     videoElement?.pause();
   }
+}
+
+function centerDialog(dialog) {
+  const startingX = window.innerWidth / 2 - getOffsetWidth(dialog) / 2;
+  dialog.style.left = `${startingX}px`;
+  dialog.style.top = "";
+}
+
+function getOffsetWidth(dialog) {
+  const wasDialogClosed = !dialog.open;
+
+  // dialog.style.opacity = "0";
+  dialog.style.transition = "none";
+  dialog.show();
+
+  const dialogOffsetWitdh = dialog.offsetWidth;
+
+  wasDialogClosed && dialog.close();
+
+  // dialog.style.opacity = "";
+  dialog.offsetHeight;
+  dialog.style.transition = "";
+
+  return dialogOffsetWitdh;
 }
 
 function reassignZIndices(clickedDialog) {
@@ -221,4 +226,18 @@ function replaceContent(dialog, topbar, newTopbar, newContent) {
   dialog.appendChild(newContent);
 }
 
-document.addEventListener("DOMContentLoaded", e => setupWindowReplaces());
+function guideWindowOnAnimationEnd(e) {
+  const dialog = e.target;
+
+  dialog.style.animationDuration = "150ms";
+  dialog.style.animationDelay = "0ms";
+
+  dialog.removeEventListener("animationend", guideWindowOnAnimationEnd);
+}
+
+document.addEventListener("DOMContentLoaded", e => {
+  setupWindowReplaces();
+
+  const guideWindow = document.getElementById("window1");
+  guideWindow.addEventListener("animationend", guideWindowOnAnimationEnd);
+});

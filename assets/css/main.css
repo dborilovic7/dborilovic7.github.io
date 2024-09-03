@@ -102,8 +102,8 @@ img, video {
 }
 
 #window1[open] {
-  --dialog-start-scale: 0.25;
-  animation: fade-in 1s 1s forwards;
+  --dialog-start-scale: 0.35;
+  animation: fade-in 700ms 1s forwards;
 }
 
 #window1 h1 {
@@ -113,6 +113,32 @@ img, video {
 
 #window1 p {
   font-size: 0.75rem;
+}
+
+#menu {
+  transition: none;
+}
+
+#menu[open] {
+  animation-duration: 0s;
+}
+
+#shutdown-overlay {
+  opacity: 0;
+  transition: opacity 1.1s, display 1.1s allow-discrete;
+}
+
+#shutdown-overlay.open {
+  opacity: 1;
+}
+
+#power-on-icon {
+  text-shadow: 0px 0px 4px white;
+  transition: text-shadow 100ms ease;
+}
+
+#power-on-icon:hover {
+  text-shadow: 0px 0px 8px white;
 }
 
 /* sm */

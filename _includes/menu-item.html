@@ -1,0 +1,18 @@
+<li class="flex items-center gap-2 px-3 py-2 w-full border-b border-cerulean-500">
+  {% if include.action contains "open" %}
+    {% assign typeWithId = include.action | replace: "open[", "" | replace: "]", "" %}
+    {% assign type = typeWithId | replace_regex: "\(\d+\)", "" %}
+    {% assign windowId = typeWithId | replace_regex: ".+\(", "" | replace: ")", "" %}
+
+    <button id="open-btn{{ windowId }}" class="w-full text-left">
+      {% include menu-item-base.html name=include.name iclass=include.iclass %}
+    </button>
+    {% include window.html id=windowId iclass=include.iclass name=include.name type=type data=include.data
+      contentClass=include.contentClass open=include.windowopen %}
+
+  {% else %}
+    <button id="{{ include.btnId }}">
+      {% include menu-item-base.html name=include.name iclass=include.iclass %}
+    </button>
+  {% endif %}
+</li>

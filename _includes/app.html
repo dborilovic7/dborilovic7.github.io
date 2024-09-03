@@ -16,7 +16,8 @@
     <button id="open-btn{{ windowId }}">
       {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
     </button>
-    {% include window.html id=windowId iclass=include.iclass name=include.name type=type data=include.data %}
+    {% include window.html id=windowId iclass=include.iclass name=include.name type=type data=include.data
+      contentClass=include.contentClass open=include.windowopen %}
 
   {% elsif include.action contains "replace" %}
     {% assign typeWithIds = include.action | replace: "replace[", "" | replace: "]", "" %}
@@ -27,7 +28,8 @@
     <button class="replace-btn" data-window-id="{{ windowId }}" data-replacement-id="{{ replacementId }}">
       {% include app-base.html iclass=include.iclass name=include.name description=include.description %}
     </button>
-    {% include window-replacement.html id=replacementId iclass=include.iclass name=include.name type=type data=include.data %}
+    {% include window-replacement.html id=replacementId iclass=include.iclass name=include.name type=type data=include.data
+      contentClass=include.contentClass open=include.windowopen %}
 
   {% else %}
     {% include app-base.html iclass=include.iclass name=include.name description=include.description %}

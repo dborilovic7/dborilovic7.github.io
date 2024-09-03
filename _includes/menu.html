@@ -1,12 +1,10 @@
 <dialog id="menu" class="absolute bottom-0 z-20 bg-cerulean-400 w-fit">
   <ul class="absolute bottom-0 contents text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-    <li class="flex items-center gap-2 px-3 py-2 w-full border-b border-cerulean-500">
-      <i class="fa-solid fa-gear text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"></i>
-      <span>Settings</span>
-    </li>
-    <li class="flex items-center gap-2 px-3 py-2 w-full border-b border-cerulean-500">
-      <i class="fa-solid fa-power-off text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"></i>
-      <span>Shutdown</span>
-    </li>
+    {% comment %} {% include menu-item.html name="Settings" iclass="fa-solid fa-gear" %} {% endcomment %}
+
+    {% include menu-item.html name="Guide" iclass="fa-solid fa-book-open" action="open[html(1)]"
+      data=site.data.content.guide windowopen=true contentClass="flex flex-col gap-4 h-full-win-content overflow-auto" %}
+
+    {% include menu-item.html name="Shutdown" iclass="fa-solid fa-power-off" btnId="shutdown-btn" %}
   </ul>
 </dialog>
