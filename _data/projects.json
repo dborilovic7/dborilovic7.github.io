@@ -15,7 +15,7 @@
   },
   {
     "name": "NetPizza",
-    "description": "College capstone project - a website for ordering pizza.",
+    "description": "University project - a website for ordering pizza.",
     "icon_class": "fa-solid fa-pizza-slice wide-tooltip",
     "action": "replace[explorer(2,5)]",
     "data": [
