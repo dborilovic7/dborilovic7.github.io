@@ -1,7 +1,7 @@
 [
   {
     "name": "Coin Vision",
-    "description": "Computer vision mining bot for the COIN app written in Python.",
+    "description": "Computer vision mining bot for the COIN app.",
     "icon_class": "fa-solid fa-eye wide-tooltip",
     "action": "open[videos(4)]",
     "data": {
