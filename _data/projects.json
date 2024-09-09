@@ -11,18 +11,22 @@
   {
     "name": "TorrentBay",
     "description": "Your torrent search engine!",
-    "icon_class": "fa-solid fa-globe wide-tooltip"
+    "icon_class": "fa-solid fa-globe wide-tooltip",
+    "action": "open[videos(5)]",
+    "data": {
+      "src": "/assets/videos/tb_search_for_torrents.mp4"
+    }
   },
   {
     "name": "NetPizza",
     "description": "University project - a website for ordering pizza.",
     "icon_class": "fa-solid fa-pizza-slice wide-tooltip",
-    "action": "replace[explorer(2,5)]",
+    "action": "replace[explorer(2,6)]",
     "data": [
       {
         "name": "Home",
         "icon_class": "fa-solid fa-image",
-        "action": "open[photos(6)]",
+        "action": "open[photos(7)]",
         "data": {
           "src": "/assets/images/netpizza/home_eng.png",
           "alt": "NetPizza Homepage"
@@ -31,7 +35,7 @@
       {
         "name": "Login",
         "icon_class": "fa-solid fa-image",
-        "action": "open[photos(7)]",
+        "action": "open[photos(8)]",
         "data": {
           "src": "/assets/images/netpizza/login_eng.png",
           "alt": "NetPizza login page"
@@ -40,7 +44,7 @@
       {
         "name": "Signup",
         "icon_class": "fa-solid fa-image",
-        "action": "open[photos(8)]",
+        "action": "open[photos(9)]",
         "data": {
           "src": "/assets/images/netpizza/signup_eng.png",
           "alt": "NetPizza sign up page"
