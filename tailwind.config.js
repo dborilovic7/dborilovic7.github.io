@@ -3,7 +3,8 @@ module.exports = {
     './_includes/**/*.html',
     './_layouts/**/*.html',
     './_posts/*.{md,html}',
-    './*.{md,html}'
+    './*.{md,html}',
+    './_data/content.yml'
   ],
   theme: {
     extend: {
