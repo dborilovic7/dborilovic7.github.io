@@ -12,11 +12,22 @@ projects:
     action: replace[explorer(2,4)]
     data: 
       - name: About
-        description: About
+        description: About Coin Vision
         icon_class: fa-solid fa-circle-info
+        content_class: "flex flex-col h-full-win-content overflow-auto"
         action: open[html(5)]
+        data: |-
+          <h2 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 mb-2 self-center">Coin Vision</h2>
+          <ul class="ml-6">
+            <li class="p-2">A computer vision bot made specifically for mining cryptocurrency in the COIN app. Intended for
+              use with software that mirrors your phone screen.</li>
+            <li class="p-2">Takes screenshots periodically and uses OpenCV's pattern matching algorithm to find the coordinates
+              of specific elements in the screenshots.</li>
+            <li class="p-2">Utilizes PyAutoGUI to automate clicks on the virtual phone screen, thus mining the app’s cryptocurrency
+              and watching ads for additional rewards.</li>
+          </ul>
       
-      - name: Video
+      - name: Demo
         description: Mining COIN with Coin Vision
         icon_class: fa-solid fa-film
         action: open[videos(6)]
@@ -29,10 +40,20 @@ projects:
     action: replace[explorer(2,7)]
     data:
       - name: About
-        description: About
+        description: About TorrentBay
         icon_class: fa-solid fa-circle-info
+        content_class: "flex flex-col h-full-win-content overflow-auto"
+        action: open[html(8)]
+        data: |-
+          <h2 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 mb-2 self-center">TorrentBay</h2>
+          <ul class="ml-6">
+            <li class="p-2">A simple torrent search website that works by aggregating the search results from the most
+              popular torrent sites.</li>
+            <li class="p-2">Allows users to stream HD movies and TV shows.</li>
+            <li class="p-2">Implements a custom JavaScript pagination solution.</li>
+          </ul>
       
-      - name: Video
+      - name: Demo
         description: Searching on TorrentBay
         icon_class: fa-solid fa-film
         action: open[videos(9)]
@@ -45,8 +66,18 @@ projects:
     action: replace[explorer(2,10)]
     data:
       - name: About
-        description: About
+        description: About NetPizza
         icon_class: fa-solid fa-circle-info
+        content_class: "flex flex-col h-full-win-content overflow-auto"
+        action: open[html(11)]
+        data: |-
+          <h2 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 mb-2 self-center">NetPizza</h2>
+          <ul class="ml-6">
+            <li class="p-2">A university project: a simple and user-friendly website for ordering pizza.</li>
+            <li class="p-2">Implements essential functionalities such as user registration and login, account info editing
+              and a fully functional webshop with order history.</li>
+            <li class="p-2">Includes an admin panel for adding pizzas, editing orders and setting user types.</li>
+          </ul>
       
       - name: Home
         icon_class: fa-solid fa-image

@@ -6,12 +6,16 @@
 @tailwind utilities;
 
 :root {
-  --taskbar-height: 4rem;
+  --taskbar-height: 2.5rem;
   --topbar-height: 27px;
   --dialog-start-opacity: 0;
   --dialog-end-opacity: 1;
   --dialog-start-scale: 0.8;
   --dialog-end-scale: 1;
+}
+
+ul {
+  list-style-type: disclosure-closed;
 }
 
 dialog {
@@ -77,7 +81,7 @@ dialog[open] {
 }
 
 dialog:has(> div.photos), dialog:has(> div.videos) {
-  width: fit-content;
+  width: max-content;
   height: auto;
   max-width: 90%;
   max-height: calc(90vh - var(--taskbar-height));
@@ -143,6 +147,10 @@ img, video {
 
 /* sm */
 @media(min-width: 640px) {
+  :root {
+    --taskbar-height: 3rem;
+  }
+
   #window1 h1 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -157,6 +165,10 @@ img, video {
 
 /* md */
 @media(min-width: 768px) {
+  :root {
+    --taskbar-height: 3.5rem;
+  }
+
   #window1 h1 {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -171,6 +183,10 @@ img, video {
 
 /* lg */
 @media(min-width: 1024px) {
+  :root {
+    --taskbar-height: 4rem;
+  }
+
   #window1 h1 {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -185,6 +201,10 @@ img, video {
 
 /* xl */
 @media(min-width: 1280px) {
+  :root {
+    --taskbar-height: 4.5rem;
+  }
+
   #window1 h1 {
     font-size: 3rem;
     line-height: 1;
@@ -199,6 +219,10 @@ img, video {
 
 /* 2xl */
 @media(min-width: 1536px) {
+  :root {
+    --taskbar-height: 5rem;
+  }
+
   #window1 h1 {
     font-size: 3.75rem;
     line-height: 1;

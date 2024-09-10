@@ -33,3 +33,5 @@
 - Power on button glow animation?
 - Change guide window's starting scale(animation)
 - Add text to power on button?
+- Clear explorers' history when powering on and off again
+- Show full path in explorer windows?

@@ -10,7 +10,7 @@ function cloneWithEventListeners(node) {
   const newButtons = clonedNode.querySelectorAll("button");
 
   newButtons.forEach(button => {
-    const id = parseInt(button.id.substr(-1));
+    const id = parseInt(button.id.match(/\d+/));
     const { type, listener } = buttonEventListeners[id];
     
     button.addEventListener(type, listener);

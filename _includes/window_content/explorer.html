@@ -1,5 +1,6 @@
 <div class="window__content explorer flex flex-wrap p-3 gap-4">
   {% for item in include.data %}
-    {% include app.html iclass=item.icon_class name=item.name description=item.description action=item.action data=item.data %}
+    {% include app.html iclass=item.icon_class name=item.name description=item.description
+      action=item.action data=item.data contentClass=item.content_class %}
   {% endfor %}
 </div>
