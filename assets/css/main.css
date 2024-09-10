@@ -77,7 +77,7 @@ dialog[open] {
 }
 
 [data-tooltip].wide-tooltip::after {
-  width: 300%;
+  width: 250%;
 }
 
 dialog:has(> div.photos), dialog:has(> div.videos) {
