@@ -26,6 +26,22 @@ module.exports = {
       },
       height: {
         'full-win-content': 'calc(100% - var(--topbar-height))'
+      },
+      gridTemplateColumns: {
+        'win': 'repeat(auto-fill, 40px)',
+        'win-sm': 'repeat(auto-fill, 66px)',
+        'win-md': 'repeat(auto-fill, 88px)',
+        'win-lg': 'repeat(auto-fill, 110px)',
+        'win-xl': 'repeat(auto-fill, 133px)',
+        'win-2xl': 'repeat(auto-fill, 150px)'
+      },
+      gridTemplateRows: {
+        'win': 'repeat(auto-fill, 48px)',
+        'win-sm': 'repeat(auto-fill, 67px)',
+        'win-md': 'repeat(auto-fill, 80px)',
+        'win-lg': 'repeat(auto-fill, 93px)',
+        'win-xl': 'repeat(auto-fill, 104px)',
+        'win-2xl': 'repeat(auto-fill, 124px)'
       }
     }
   },
