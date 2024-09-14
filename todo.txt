@@ -1,6 +1,8 @@
 - Ideas for menu options: Find/Search
 - Add "skills" section to about card?
 - Add more padding to about card?
+- Fix font on smallest screen sizes (too small to read?)
+- Bug: replacement windows can't be dragged on name/title
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Change the font of the whole site
