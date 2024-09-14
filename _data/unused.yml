@@ -1,0 +1,13 @@
+about_me_card: |-
+  <div class="col-span-3 border-t border-white">
+    <details class="mt-4">
+      <summary><h3 class="font-medium inline-block">Skills</h3></summary>
+
+      <ul class="ml-5">
+        <li>HTML, CSS, JavaScript, Ruby, SQL</li>
+        <li>React.js, Tailwind, Ruby on Rails, Jekyll</li>
+        <li>Git, GitHub, Docker, npm, SASS, Regex</li>
+        <li>Agile Software Development, Test-Driven Development (TDD)</li>
+      </ul>
+    </details>
+  </div>

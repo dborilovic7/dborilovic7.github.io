@@ -1,4 +1,6 @@
 - Ideas for menu options: Find/Search
+- Add "skills" section to about card?
+- Add more padding to about card?
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Change the font of the whole site
@@ -35,3 +37,5 @@
 - Add text to power on button?
 - Clear explorers' history when powering on and off again
 - Show full path in explorer windows?
+- Update project descriptions
+- Fix topbar wrapping on smaller screens (set max-w for title? etc)

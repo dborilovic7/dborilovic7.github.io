@@ -23,7 +23,7 @@ projects:
               use with software that mirrors your phone screen.</li>
             <li class="p-2">Takes screenshots periodically and uses OpenCV's pattern matching algorithm to find the coordinates
               of specific elements in the screenshots.</li>
-            <li class="p-2">Utilizes PyAutoGUI to automate clicks on the virtual phone screen, thus mining the app’s cryptocurrency
+            <li class="p-2">Utilizes PyAutoGUI to automate clicks on the virtual phone screen, thus mining the app's cryptocurrency
               and watching ads for additional rewards.</li>
           </ul>
       
@@ -99,3 +99,31 @@ projects:
         data:
           src: /assets/images/netpizza/signup_eng.png
           alt: NetPizza sign up page
+
+about_me_card: |-
+  <div class="text-center">
+    <img src="/assets/images/profile.jpeg" width=200 class="mx-auto" />
+    <h2 class="text-lg font-bold mt-4">Dominik Borilović</h2>
+    <p class="text-sm">Full-Stack Developer</p>
+  </div>
+
+  <div class="sm:col-span-2 flex flex-col sm:items-center justify-between">
+    <div>
+      <h3 class="font-medium">About</h3>
+      <p>
+        I'm a Full-Stack Developer with a passion for creating.
+        I love seeing individual parts come together to form something greater,
+        whether in software development or anything else in the world.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="font-medium sm:-ml-5 mt-2">Interests</h3>
+      <ul>
+        <li class="ml-5 sm:ml-0">Taking care of my plants 🌱</li>
+        <li class="ml-5 sm:ml-0">Watching lots of YouTube videos 🎞</li>
+        <li class="ml-5 sm:ml-0">Traveling and exploring nature's wonders ✈</li>
+        <li class="ml-5 sm:ml-0">And of course, building awesome software with 💻!</li>
+      </ul>
+    </div>
+  </div>

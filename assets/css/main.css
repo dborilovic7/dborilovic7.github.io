@@ -119,6 +119,10 @@ img, video {
   font-size: 0.75rem;
 }
 
+#window3 {
+  width: 320px;
+}
+
 #menu {
   transition: none;
 }
@@ -160,6 +164,11 @@ img, video {
   #window1 p {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  #window3 {
+    width: 640px;
+    height: auto;
   }
 }
 
