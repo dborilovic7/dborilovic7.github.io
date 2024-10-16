@@ -25,7 +25,8 @@ module.exports = {
         }
       },
       height: {
-        'full-win-content': 'calc(100% - var(--topbar-height))'
+        'full-win-content': 'calc(100% - var(--topbar-height))',
+        'desktop': 'calc(100% - var(--taskbar-height))'
       },
       gridTemplateColumns: {
         'win': 'repeat(auto-fill, 40px)',
