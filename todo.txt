@@ -15,7 +15,6 @@
 - See if changing windows' transform property is faster than changing windows' left and top properties:
   - If yes, update the window dragging code
 - Add different themes (win95/98, win xp, macos, linux etc.)
-- windows.js -> refactor selectors (select dialog children through dialog and not the whole document)
 - Hover, focus etc. styles
 - Change tooltip? -> Show when hovering over the app div and not the icon, then update tooltip positioning
 - Responsive tooltip styles?
