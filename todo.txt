@@ -41,3 +41,4 @@
 - Show full path in explorer windows?
 - Update project descriptions
 - Fix topbar wrapping on smaller screens (set max-w for title? etc)
+- Find a better solution for disabling scrolling on opening windows?

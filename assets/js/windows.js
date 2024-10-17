@@ -42,6 +42,7 @@ function setupWindow(id) {
   openBtn && addAnEventListener(id, openBtn, "click", () => {
     reassignZIndices(dialog);
     dialog.show();
+    desktop.scroll(0, 0);
   });
 
   if(backButton) {
