@@ -42,6 +42,7 @@ function setupWindow(id) {
   openBtn && addAnEventListener(id, openBtn, "click", () => {
     reassignZIndices(dialog);
     dialog.show();
+    desktop.scroll(0, 0);
   });
 
   if(backButton) {
@@ -182,13 +183,17 @@ function setupWindowReplaces() {
     
     const win = windows.find(win => win.element === dialog);
 
-    addAnEventListener(replacementId, replaceBtn, "click", () => addToWindowHistory(replacementId, dialog, topbar, backButton, forwardButton, win));
+    addAnEventListener(replacementId, replaceBtn, "click", () => {
+      addToWindowHistory(windowId, replacementId, dialog, topbar, backButton, forwardButton, win)
+    });
   });
 }
 
-function addToWindowHistory(replacementId, dialog, topbar, backButton, forwardButton, win) {
+function addToWindowHistory(originalId, replacementId, dialog, topbar, backButton, forwardButton, win) {
   const newIcon = document.getElementById(`topbar__info-icon${replacementId}`).cloneNode(true);
   const newName = document.getElementById(`topbar__info-name${replacementId}`).cloneNode(true);
+  newIcon.id = `topbar__info-icon${originalId}`;
+  newName.id = `topbar__info-name${originalId}`;
   const newTopbar = { icon: newIcon, name: newName };
 
   const newContent = document.getElementById(`window-replacement${replacementId}`).querySelector(".window__content");
