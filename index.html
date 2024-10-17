@@ -1,23 +1,13 @@
 ---
 layout: default
 ---
-<div id="rotate-device-overlay" class="landscape:hidden flex flex-col justify-evenly items-center w-full h-full absolute z-30 bg-black/50">
-  <p class="text-3xl sm:text-5xl text-white">Please rotate your device</p>
-  <picture>
-    <source media="(max-width:639px)" srcset="/assets/icons/rotate-device-256.png">
-    <img src="/assets/icons/rotate-device-512.png" alt="Illustration of a mobile phone rotating from portrait to landscape mode">
-  </picture>
-  <button id="remove-overlay" class="text-lg sm:text-2xl text-white underline">I don't want to</button>
-</div>
+{% include rotate-device-overlay.html %}
 
 <div id="screen" class="w-full max-h-screen my-auto aspect-video select-none touch-none text-cerulean-950">
   
   <div id="desktop" class="grid grid-cols-10 grid-rows-6 gap-1 p-2 grid-flow-col items-center w-full h-desktop
     relative overflow-hidden bg-cerulean-50">
-    <p class="temp-notice absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/3 text-lg md:text-2xl lg:text-4xl
-      text-center opacity-25">
-      More project demos coming soon...
-    </p>
+    {% include temp-notice.html %}
 
     {% include app.html iclass="fa-solid fa-folder-closed" name="Projects" description="Take a look at my projects"
       action="open[explorer(2)]" data=site.data.content.projects %}
@@ -40,9 +30,5 @@ layout: default
 
   {% include taskbar.html %}
 
-  <div id="shutdown-overlay" class="absolute w-full h-full left-0 top-0 z-30 bg-cerulean-950 hidden">
-    <button id="power-on-btn" class="relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-      <i id="power-on-icon" class="fa-solid fa-power-off text-[250px] text-cerulean-100"></i>
-    </button>
-  </div>
+  {% include shutdown-overlay.html %}
 </div>
