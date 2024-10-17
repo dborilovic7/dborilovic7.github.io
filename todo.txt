@@ -2,7 +2,6 @@
 - Add "skills" section to about card?
 - Add more padding to about card?
 - Fix font on smallest screen sizes (too small to read?)
-- Bug: replacement windows can't be dragged on name/title
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Change the font of the whole site
@@ -28,7 +27,6 @@
 - CSS cleanup (remove unnecessary styles)
 - Fix blank horizontal space on images and videos for mobile devices
 - Add a "glass windows" option to monochromatic themes (makes windows a bit transparent)
-- Add display:grid to window content
 - Optimize menu code if possible
 - Check dialog getOffsetWidth for redundant code
 - Add sounds
@@ -41,4 +39,4 @@
 - Show full path in explorer windows?
 - Update project descriptions
 - Fix topbar wrapping on smaller screens (set max-w for title? etc)
-- Find a better solution for disabling scrolling on opening windows?
+- Find a better solution for disabling desktop scrolling on opening windows?
