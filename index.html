@@ -83,21 +83,21 @@
     
     
     
-    <button class="replace-btn" data-window-id="2" data-replacement-id="4">
-      <i class="fa-solid fa-eye wide-tooltip sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
- data-tooltip="Computer vision mining bot for the COIN app."></i>
-<p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Coin Vision</p>
+    <button class="replace-btn" data-window-id="2" data-replacement-id="17">
+      <i class="fa-solid fa-message wide-tooltip sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
+ data-tooltip="Basic chat application made with tRPC and Websockets."></i>
+<p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">tRPChat</p>
     </button>
     
 
 
 
 
-<div id="topbar-replacement4" style="display: none;">
-  <i id="topbar__info-icon4" class="fa-solid fa-folder px-1">
-  </i><span id="topbar__info-name4" class="mr-1">Coin Vision</span>
+<div id="topbar-replacement17" style="display: none;">
+  <i id="topbar__info-icon17" class="fa-solid fa-folder px-1">
+  </i><span id="topbar__info-name17" class="mr-1">tRPChat</span>
 </div>
-<div id="window-replacement4" style="display: none;">
+<div id="window-replacement17" style="display: none;">
   
     <div class="window__content explorer h-full-win-content p-3 gap-2 lg:gap-4 grid grid-cols-2 md:grid-cols-3
   grid-rows-win sm:grid-rows-win-sm md:grid-rows-win-md lg:grid-rows-win-lg xl:grid-rows-win-xl 2xl:grid-rows-win-2xl">
@@ -111,7 +111,151 @@
     
     
 
-    <button id="open-btn5">
+    <button id="open-btn16">
+      <i class="fa-solid fa-circle-info sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
+ data-tooltip="About tRPChat"></i>
+<p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">About</p>
+    </button>
+    
+
+
+
+
+<dialog id="window16" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+  >
+  <div id="topbar16" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info16">
+      <i id="topbar__info-icon16" class="fa-solid fa-circle-info px-1">
+      </i><span id="topbar__info-name16" class="mr-1">About</span>
+      
+    </div>
+    <div id="topbar__actions16">
+      <i id="topbar__actions-minimize16" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize16" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close16" class="fa-solid fa-close px-1"></i>
+    </div>
+  </div>
+
+  
+    <div class="window__content p-3 flex flex-col h-full-win-content overflow-auto">
+  <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 self-center">tRPChat</h2>
+<div class="tools self-center text-sm mt-2">
+  <i class="fa-solid fa-screwdriver-wrench"></i>
+  <span>tRPC, Websockets, Node.js, Express.js, React.js</span>
+</div>
+<ul class="ml-6 mt-3">
+  <li class="p-2">The server is built with Express.js and manages users and chat channels.</li>
+  <li class="p-2">The client is a basic, responsive React.js application.</li>
+  <li class="p-2">Supports chat commands for changing nicknames, deleting and editing messages, and
+    sending messages with a different styling.</li>
+</ul>
+</div>
+  
+</dialog>
+
+<script>setupWindow(16)</script>
+
+
+  
+</div>
+  
+    <div class="app flex flex-col items-center text-center px-2"
+  style="
+    ">
+
+  
+    
+    
+    
+
+    <button id="open-btn15">
+      <i class="fa-solid fa-film sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
+ data-tooltip="2 users chatting and using chat commands"></i>
+<p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Demo</p>
+    </button>
+    
+
+
+
+
+<dialog id="window15" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+  >
+  <div id="topbar15" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info15">
+      <i id="topbar__info-icon15" class="fa-solid fa-film px-1">
+      </i><span id="topbar__info-name15" class="mr-1">Demo</span>
+      
+    </div>
+    <div id="topbar__actions15">
+      <i id="topbar__actions-minimize15" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize15" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close15" class="fa-solid fa-close px-1"></i>
+    </div>
+  </div>
+
+  
+    <div class="window__content videos flex h-full-win-content bg-black">
+  <video width="1280" height="720" controls autoplay muted class="border-4 border-black">
+    <source src="/assets/videos/trpchat_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+  
+</dialog>
+
+<script>setupWindow(15)</script>
+
+
+  
+</div>
+  
+</div>
+  
+</div>
+
+
+  
+</div>
+  
+    <div class="app flex flex-col items-center text-center px-2"
+  style="
+    ">
+
+  
+    
+    
+    
+    
+    
+    <button class="replace-btn" data-window-id="2" data-replacement-id="14">
+      <i class="fa-solid fa-eye wide-tooltip sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
+ data-tooltip="Computer vision mining bot for the COIN app."></i>
+<p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Coin Vision</p>
+    </button>
+    
+
+
+
+
+<div id="topbar-replacement14" style="display: none;">
+  <i id="topbar__info-icon14" class="fa-solid fa-folder px-1">
+  </i><span id="topbar__info-name14" class="mr-1">Coin Vision</span>
+</div>
+<div id="window-replacement14" style="display: none;">
+  
+    <div class="window__content explorer h-full-win-content p-3 gap-2 lg:gap-4 grid grid-cols-2 md:grid-cols-3
+  grid-rows-win sm:grid-rows-win-sm md:grid-rows-win-md lg:grid-rows-win-lg xl:grid-rows-win-xl 2xl:grid-rows-win-2xl">
+  
+    <div class="app flex flex-col items-center text-center px-2"
+  style="
+    ">
+
+  
+    
+    
+    
+
+    <button id="open-btn13">
       <i class="fa-solid fa-circle-info sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="About Coin Vision"></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">About</p>
@@ -121,18 +265,18 @@
 
 
 
-<dialog id="window5" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+<dialog id="window13" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
   >
-  <div id="topbar5" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
-    <div id="topbar__info5">
-      <i id="topbar__info-icon5" class="fa-solid fa-circle-info px-1">
-      </i><span id="topbar__info-name5" class="mr-1">About</span>
+  <div id="topbar13" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info13">
+      <i id="topbar__info-icon13" class="fa-solid fa-circle-info px-1">
+      </i><span id="topbar__info-name13" class="mr-1">About</span>
       
     </div>
-    <div id="topbar__actions5">
-      <i id="topbar__actions-minimize5" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize5" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close5" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions13">
+      <i id="topbar__actions-minimize13" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize13" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close13" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -155,7 +299,7 @@
   
 </dialog>
 
-<script>setupWindow(5)</script>
+<script>setupWindow(13)</script>
 
 
   
@@ -170,7 +314,7 @@
     
     
 
-    <button id="open-btn6">
+    <button id="open-btn12">
       <i class="fa-solid fa-film sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Mining COIN with Coin Vision"></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Demo</p>
@@ -180,18 +324,18 @@
 
 
 
-<dialog id="window6" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+<dialog id="window12" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
   >
-  <div id="topbar6" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
-    <div id="topbar__info6">
-      <i id="topbar__info-icon6" class="fa-solid fa-film px-1">
-      </i><span id="topbar__info-name6" class="mr-1">Demo</span>
+  <div id="topbar12" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info12">
+      <i id="topbar__info-icon12" class="fa-solid fa-film px-1">
+      </i><span id="topbar__info-name12" class="mr-1">Demo</span>
       
     </div>
-    <div id="topbar__actions6">
-      <i id="topbar__actions-minimize6" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize6" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close6" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions12">
+      <i id="topbar__actions-minimize12" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize12" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close12" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -205,7 +349,7 @@
   
 </dialog>
 
-<script>setupWindow(6)</script>
+<script>setupWindow(12)</script>
 
 
   
@@ -229,7 +373,7 @@
     
     
     
-    <button class="replace-btn" data-window-id="2" data-replacement-id="7">
+    <button class="replace-btn" data-window-id="2" data-replacement-id="11">
       <i class="fa-solid fa-globe wide-tooltip sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="Your torrent search engine!"></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">TorrentBay</p>
@@ -239,11 +383,11 @@
 
 
 
-<div id="topbar-replacement7" style="display: none;">
-  <i id="topbar__info-icon7" class="fa-solid fa-folder px-1">
-  </i><span id="topbar__info-name7" class="mr-1">TorrentBay</span>
+<div id="topbar-replacement11" style="display: none;">
+  <i id="topbar__info-icon11" class="fa-solid fa-folder px-1">
+  </i><span id="topbar__info-name11" class="mr-1">TorrentBay</span>
 </div>
-<div id="window-replacement7" style="display: none;">
+<div id="window-replacement11" style="display: none;">
   
     <div class="window__content explorer h-full-win-content p-3 gap-2 lg:gap-4 grid grid-cols-2 md:grid-cols-3
   grid-rows-win sm:grid-rows-win-sm md:grid-rows-win-md lg:grid-rows-win-lg xl:grid-rows-win-xl 2xl:grid-rows-win-2xl">
@@ -257,7 +401,7 @@
     
     
 
-    <button id="open-btn8">
+    <button id="open-btn10">
       <i class="fa-solid fa-circle-info sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="About TorrentBay"></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">About</p>
@@ -267,18 +411,18 @@
 
 
 
-<dialog id="window8" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+<dialog id="window10" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
   >
-  <div id="topbar8" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
-    <div id="topbar__info8">
-      <i id="topbar__info-icon8" class="fa-solid fa-circle-info px-1">
-      </i><span id="topbar__info-name8" class="mr-1">About</span>
+  <div id="topbar10" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info10">
+      <i id="topbar__info-icon10" class="fa-solid fa-circle-info px-1">
+      </i><span id="topbar__info-name10" class="mr-1">About</span>
       
     </div>
-    <div id="topbar__actions8">
-      <i id="topbar__actions-minimize8" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize8" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close8" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions10">
+      <i id="topbar__actions-minimize10" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize10" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close10" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -299,7 +443,7 @@
   
 </dialog>
 
-<script>setupWindow(8)</script>
+<script>setupWindow(10)</script>
 
 
   
@@ -373,7 +517,7 @@
     
     
     
-    <button class="replace-btn" data-window-id="2" data-replacement-id="10">
+    <button class="replace-btn" data-window-id="2" data-replacement-id="8">
       <i class="fa-solid fa-pizza-slice wide-tooltip sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="University project - a website for ordering pizza."></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">NetPizza</p>
@@ -383,11 +527,11 @@
 
 
 
-<div id="topbar-replacement10" style="display: none;">
-  <i id="topbar__info-icon10" class="fa-solid fa-folder px-1">
-  </i><span id="topbar__info-name10" class="mr-1">NetPizza</span>
+<div id="topbar-replacement8" style="display: none;">
+  <i id="topbar__info-icon8" class="fa-solid fa-folder px-1">
+  </i><span id="topbar__info-name8" class="mr-1">NetPizza</span>
 </div>
-<div id="window-replacement10" style="display: none;">
+<div id="window-replacement8" style="display: none;">
   
     <div class="window__content explorer h-full-win-content p-3 gap-2 lg:gap-4 grid grid-cols-2 md:grid-cols-3
   grid-rows-win sm:grid-rows-win-sm md:grid-rows-win-md lg:grid-rows-win-lg xl:grid-rows-win-xl 2xl:grid-rows-win-2xl">
@@ -401,7 +545,7 @@
     
     
 
-    <button id="open-btn11">
+    <button id="open-btn7">
       <i class="fa-solid fa-circle-info sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
  data-tooltip="About NetPizza"></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">About</p>
@@ -411,18 +555,18 @@
 
 
 
-<dialog id="window11" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+<dialog id="window7" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
   >
-  <div id="topbar11" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
-    <div id="topbar__info11">
-      <i id="topbar__info-icon11" class="fa-solid fa-circle-info px-1">
-      </i><span id="topbar__info-name11" class="mr-1">About</span>
+  <div id="topbar7" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info7">
+      <i id="topbar__info-icon7" class="fa-solid fa-circle-info px-1">
+      </i><span id="topbar__info-name7" class="mr-1">About</span>
       
     </div>
-    <div id="topbar__actions11">
-      <i id="topbar__actions-minimize11" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize11" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close11" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions7">
+      <i id="topbar__actions-minimize7" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize7" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close7" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -443,7 +587,7 @@
   
 </dialog>
 
-<script>setupWindow(11)</script>
+<script>setupWindow(7)</script>
 
 
   
@@ -458,7 +602,7 @@
     
     
 
-    <button id="open-btn12">
+    <button id="open-btn6">
       <i class="fa-solid fa-image sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
 ></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Home</p>
@@ -468,18 +612,18 @@
 
 
 
-<dialog id="window12" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+<dialog id="window6" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
   >
-  <div id="topbar12" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
-    <div id="topbar__info12">
-      <i id="topbar__info-icon12" class="fa-solid fa-images px-1">
-      </i><span id="topbar__info-name12" class="mr-1">Home</span>
+  <div id="topbar6" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info6">
+      <i id="topbar__info-icon6" class="fa-solid fa-images px-1">
+      </i><span id="topbar__info-name6" class="mr-1">Home</span>
       
     </div>
-    <div id="topbar__actions12">
-      <i id="topbar__actions-minimize12" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize12" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close12" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions6">
+      <i id="topbar__actions-minimize6" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize6" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close6" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -490,7 +634,7 @@
   
 </dialog>
 
-<script>setupWindow(12)</script>
+<script>setupWindow(6)</script>
 
 
   
@@ -505,7 +649,7 @@
     
     
 
-    <button id="open-btn13">
+    <button id="open-btn5">
       <i class="fa-solid fa-image sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
 ></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Login</p>
@@ -515,18 +659,18 @@
 
 
 
-<dialog id="window13" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+<dialog id="window5" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
   >
-  <div id="topbar13" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
-    <div id="topbar__info13">
-      <i id="topbar__info-icon13" class="fa-solid fa-images px-1">
-      </i><span id="topbar__info-name13" class="mr-1">Login</span>
+  <div id="topbar5" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info5">
+      <i id="topbar__info-icon5" class="fa-solid fa-images px-1">
+      </i><span id="topbar__info-name5" class="mr-1">Login</span>
       
     </div>
-    <div id="topbar__actions13">
-      <i id="topbar__actions-minimize13" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize13" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close13" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions5">
+      <i id="topbar__actions-minimize5" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize5" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close5" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -537,7 +681,7 @@
   
 </dialog>
 
-<script>setupWindow(13)</script>
+<script>setupWindow(5)</script>
 
 
   
@@ -552,7 +696,7 @@
     
     
 
-    <button id="open-btn14">
+    <button id="open-btn4">
       <i class="fa-solid fa-image sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl relative"
 ></i>
 <p class="text-[0.5rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-[200%]">Signup</p>
@@ -562,18 +706,18 @@
 
 
 
-<dialog id="window14" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
+<dialog id="window4" class="absolute w-2/5 md:w-1/3 h-60 lg:h-80 min-w-52 shadow-lg bg-cerulean-200 text-cerulean-950"
   >
-  <div id="topbar14" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
-    <div id="topbar__info14">
-      <i id="topbar__info-icon14" class="fa-solid fa-images px-1">
-      </i><span id="topbar__info-name14" class="mr-1">Signup</span>
+  <div id="topbar4" class="flex justify-between px-1 pb-0.5 select-none bg-cerulean-300 font-medium">
+    <div id="topbar__info4">
+      <i id="topbar__info-icon4" class="fa-solid fa-images px-1">
+      </i><span id="topbar__info-name4" class="mr-1">Signup</span>
       
     </div>
-    <div id="topbar__actions14">
-      <i id="topbar__actions-minimize14" class="fa-solid fa-minus px-1"></i>
-      <i id="topbar__actions-maximize14" class="fa-solid fa-square px-1"></i>
-      <i id="topbar__actions-close14" class="fa-solid fa-close px-1"></i>
+    <div id="topbar__actions4">
+      <i id="topbar__actions-minimize4" class="fa-solid fa-minus px-1"></i>
+      <i id="topbar__actions-maximize4" class="fa-solid fa-square px-1"></i>
+      <i id="topbar__actions-close4" class="fa-solid fa-close px-1"></i>
     </div>
   </div>
 
@@ -584,7 +728,7 @@
   
 </dialog>
 
-<script>setupWindow(14)</script>
+<script>setupWindow(4)</script>
 
 
   
