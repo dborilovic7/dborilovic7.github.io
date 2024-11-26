@@ -6,16 +6,46 @@ guide: |-
     via email or LinkedIn.</p>
 
 projects:
+  - name: tRPChat
+    description: Basic chat application made with tRPC and Websockets.
+    icon_class: fa-solid fa-message wide-tooltip
+    action: replace[explorer(2,17)]
+    data: 
+      - name: About
+        description: About tRPChat
+        icon_class: fa-solid fa-circle-info
+        content_class: "flex flex-col h-full-win-content overflow-auto"
+        action: open[html(16)]
+        data: |-
+          <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 self-center">tRPChat</h2>
+          <div class="tools self-center text-sm mt-2">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>tRPC, Websockets, Node.js, Express.js, React.js</span>
+          </div>
+          <ul class="ml-6 mt-3">
+            <li class="p-2">The server is built with Express.js and manages users and chat channels.</li>
+            <li class="p-2">The client is a basic, responsive React.js application.</li>
+            <li class="p-2">Supports chat commands for changing nicknames, deleting and editing messages, and
+              sending messages with a different styling.</li>
+          </ul>
+      
+      - name: Demo
+        description: "2 users chatting and using chat commands"
+        icon_class: fa-solid fa-film
+        action: open[videos(15)]
+        data: 
+          src: /assets/videos/trpchat_demo.mp4
+
   - name: Coin Vision
     description: Computer vision mining bot for the COIN app.
     icon_class: fa-solid fa-eye wide-tooltip
-    action: replace[explorer(2,4)]
+    action: replace[explorer(2,14)]
     data: 
       - name: About
         description: About Coin Vision
         icon_class: fa-solid fa-circle-info
         content_class: "flex flex-col h-full-win-content overflow-auto"
-        action: open[html(5)]
+        action: open[html(13)]
         data: |-
           <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 self-center">Coin Vision</h2>
           <div class="tools self-center text-sm mt-2">
@@ -34,20 +64,20 @@ projects:
       - name: Demo
         description: Mining COIN with Coin Vision
         icon_class: fa-solid fa-film
-        action: open[videos(6)]
+        action: open[videos(12)]
         data: 
           src: /assets/videos/coin_vision_ads.mp4
   
   - name: TorrentBay
     description: Your torrent search engine!
     icon_class: fa-solid fa-globe wide-tooltip
-    action: replace[explorer(2,7)]
+    action: replace[explorer(2,11)]
     data:
       - name: About
         description: About TorrentBay
         icon_class: fa-solid fa-circle-info
         content_class: "flex flex-col h-full-win-content overflow-auto"
-        action: open[html(8)]
+        action: open[html(10)]
         data: |-
           <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 self-center">TorrentBay</h2>
           <div class="tools self-center text-sm mt-2">
@@ -71,13 +101,13 @@ projects:
   - name: NetPizza
     description: University project - a website for ordering pizza.
     icon_class: fa-solid fa-pizza-slice wide-tooltip
-    action: replace[explorer(2,10)]
+    action: replace[explorer(2,8)]
     data:
       - name: About
         description: About NetPizza
         icon_class: fa-solid fa-circle-info
         content_class: "flex flex-col h-full-win-content overflow-auto"
-        action: open[html(11)]
+        action: open[html(7)]
         data: |-
           <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 self-center">NetPizza</h2>
           <div class="tools self-center text-sm mt-2">
@@ -93,21 +123,21 @@ projects:
       
       - name: Home
         icon_class: fa-solid fa-image
-        action: open[photos(12)]
+        action: open[photos(6)]
         data:
           src: /assets/images/netpizza/home_eng.png
           alt: NetPizza Homepage
       
       - name: Login
         icon_class: fa-solid fa-image
-        action: open[photos(13)]
+        action: open[photos(5)]
         data:
           src: /assets/images/netpizza/login_eng.png
           alt: NetPizza login page
 
       - name: Signup
         icon_class: fa-solid fa-image
-        action: open[photos(14)]
+        action: open[photos(4)]
         data:
           src: /assets/images/netpizza/signup_eng.png
           alt: NetPizza sign up page
