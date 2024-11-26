@@ -1,3 +1,4 @@
+- Add tRPChat to projects
 - Ideas for menu options: Find/Search
 - Add "skills" section to about card?
 - Add more padding to about card?

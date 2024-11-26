@@ -43,6 +43,14 @@ module.exports = {
         'win-lg': 'repeat(auto-fill, 93px)',
         'win-xl': 'repeat(auto-fill, 104px)',
         'win-2xl': 'repeat(auto-fill, 124px)'
+      },
+      screens: {
+        'sm-h': {
+          'raw': '(min-height: 400px)'
+        },
+        'md-h': {
+          'raw': '(min-height: 480px)'
+        }
       }
     }
   },
