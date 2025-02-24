@@ -1,4 +1,3 @@
-- Make guide window only open on first visit (localstorage bool?)
 - Ideas for menu options: Find/Search
 - Add "skills" section to about card?
 - Add more padding to about card?

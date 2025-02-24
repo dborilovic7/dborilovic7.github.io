@@ -41,9 +41,12 @@ shutdownBtn.addEventListener("click", () => {
       setTimeout(() => centerDialog(dialog), 500);
     });
   }, 500);
+
+  localStorage.removeItem("guideOpened");
 });
 
 powerOnBtn.addEventListener("click", () => {
   shutdownOverlay.classList.remove("open");
   shutdownOverlay.style.display = "";
+  setupGuideWindow();
 });
