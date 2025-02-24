@@ -231,18 +231,36 @@ function replaceContent(dialog, topbar, newTopbar, newContent) {
   dialog.appendChild(newContent);
 }
 
-function guideWindowOnAnimationEnd(e) {
-  const dialog = e.target;
-
+function speedUpGuideWindowAnimation(dialog) {
   dialog.style.animationDuration = "150ms";
   dialog.style.animationDelay = "0ms";
+}
 
+function guideWindowOnAnimationEnd(e) {
+  const dialog = e.target;
+  speedUpGuideWindowAnimation(dialog);
   dialog.removeEventListener("animationend", guideWindowOnAnimationEnd);
+}
+
+function setupGuideWindow() {
+  const guideWindow = document.getElementById("window1");
+
+  // Reset animation (slow)
+  guideWindow.style.animationDuration = "700ms";
+  guideWindow.style.animationDelay = "1s";
+
+  const guideOpened = localStorage.getItem("guideOpened");
+  if (!guideOpened) {
+    guideWindow.show();
+    guideWindow.blur();
+    localStorage.setItem("guideOpened", "y");
+    guideWindow.addEventListener("animationend", guideWindowOnAnimationEnd);
+  } else {
+    speedUpGuideWindowAnimation(guideWindow);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", e => {
   setupWindowReplaces();
-
-  const guideWindow = document.getElementById("window1");
-  guideWindow.addEventListener("animationend", guideWindowOnAnimationEnd);
+  setupGuideWindow();
 });
