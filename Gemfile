@@ -7,6 +7,5 @@ gem 'bigdecimal'
 
 gem 'jekyll'
 gem 'webrick'
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'wdm', '~> 0.2.0' if Gem.win_platform?
 gem 'jekyll-postcss-v2'
-
