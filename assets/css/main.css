@@ -149,6 +149,12 @@ img, video {
   text-shadow: 0px 0px 8px white;
 }
 
+/* Temp styles for WIP projects */
+i.fa-radiation::before, i.fa-tree::before {
+  opacity: 50%;
+}
+
+/* Responsive Styles */
 /* sm */
 @media(min-width: 640px) {
   :root {

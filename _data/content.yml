@@ -6,6 +6,79 @@ guide: |-
     via email or LinkedIn.</p>
 
 projects:
+  - name: I.D. Rukotvorine (WIP)
+    description: Online store selling custom-made handicrafts from natural materials
+    icon_class: fa-solid fa-tree wide-tooltip
+    action: replace[explorer(2,24)]
+    data:
+      - name: About
+        description: About I.D. Rukotovrine
+        icon_class: fa-solid fa-circle-info
+        content_class: "flex flex-col h-full-win-content overflow-auto"
+        action: open[html(23)]
+        data: |-
+          <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 self-center">I.D. Rukotvorine</h2>
+          <div class="tools self-center text-sm mt-2">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>Astro, PostgreSQL, HTML, CSS, JavaScript</span>
+          </div>
+          <ul class="ml-6 mt-3">
+            <li class="p-2">A webshop for a client who wants to expand his handicraft selling business.</li>
+            <li class="p-2">Regular + completely customized products available to order.</li>
+            <li class="p-2">The site is still under construction. Stay tuned for future updates.</li>
+          </ul>
+
+  - name: HRadon (WIP)
+    description: Radon test kit webshop for Croatia (Shopify)
+    icon_class: fa-solid fa-radiation wide-tooltip
+    action: replace[explorer(2,22)]
+    data:
+      - name: About
+        description: About HRadon
+        icon_class: fa-solid fa-circle-info
+        content_class: "flex flex-col h-full-win-content overflow-auto"
+        action: open[html(21)]
+        data: |-
+          <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl p-1 self-center">HRadon</h2>
+          <div class="tools self-center text-sm mt-2">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>Shopify, Liquid, HTML, CSS, JavaScript</span>
+          </div>
+          <ul class="ml-6 mt-3">
+            <li class="p-2">HRadon is the first radon test kit supplier in Croatia.</li>
+            <li class="p-2">Built with Shopify, lots of custom HTML, CSS, JS and Liquid.</li>
+            <li class="p-2">The site is still under construction. Stay tuned for future updates.</li>
+          </ul>
+
+      - name: Live Site (WIP)
+        description: hradon.com
+        icon_class: fa-solid fa-globe
+        action: link[https://www.hradon.com/]
+
+      - name: Home
+        description: HRadon Homepage
+        icon_class: fa-solid fa-image
+        action: open[photos(20)]
+        data:
+          src: /assets/images/hradon/home_eng.png
+          alt: HRadon Homepage
+
+      - name: Shop
+        description: HRadon online store
+        icon_class: fa-solid fa-image
+        action: open[photos(19)]
+        data:
+          src: /assets/images/hradon/shop_eng.png
+          alt: HRadon online store
+
+      - name: About Us
+        description: HRadon About Us page
+        icon_class: fa-solid fa-image
+        action: open[photos(18)]
+        data:
+          src: /assets/images/hradon/about_eng.png
+          alt: HRadon About Us page
+
   - name: tRPChat
     description: Basic chat application made with tRPC and Websockets.
     icon_class: fa-solid fa-message wide-tooltip
@@ -30,7 +103,7 @@ projects:
           </ul>
       
       - name: Demo
-        description: "2 users chatting and using chat commands"
+        description: 2 users chatting and using chat commands
         icon_class: fa-solid fa-film
         action: open[videos(15)]
         data: 
@@ -70,7 +143,7 @@ projects:
   
   - name: TorrentBay
     description: Your torrent search engine!
-    icon_class: fa-solid fa-globe wide-tooltip
+    icon_class: fa-solid fa-earth-americas wide-tooltip
     action: replace[explorer(2,11)]
     data:
       - name: About
@@ -122,6 +195,7 @@ projects:
           </ul>
       
       - name: Home
+        description: NetPizza Homepage
         icon_class: fa-solid fa-image
         action: open[photos(6)]
         data:
@@ -129,18 +203,20 @@ projects:
           alt: NetPizza Homepage
       
       - name: Login
+        description: NetPizza Login page
         icon_class: fa-solid fa-image
         action: open[photos(5)]
         data:
           src: /assets/images/netpizza/login_eng.png
-          alt: NetPizza login page
+          alt: NetPizza Login page
 
       - name: Signup
+        description: NetPizza Signup page
         icon_class: fa-solid fa-image
         action: open[photos(4)]
         data:
           src: /assets/images/netpizza/signup_eng.png
-          alt: NetPizza sign up page
+          alt: NetPizza Signup page
 
 about_me_card: |-
   <div class="text-center">
