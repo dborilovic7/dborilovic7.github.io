@@ -1,3 +1,5 @@
+- Update guide window text
+- Update text for all projects
 - Put larger images and videos for projects
 - Capitalize words in titles?
 - Update guide window text: Mention tooltips on hover + other things
