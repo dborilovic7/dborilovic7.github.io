@@ -4,7 +4,7 @@
     {% assign type = typeWithId | replace_regex: "\(\d+\)", "" %}
     {% assign windowId = typeWithId | replace_regex: ".+\(", "" | replace: ")", "" %}
 
-    <button id="open-btn{{ windowId }}" class="w-full text-left">
+    <button id="open-btn{{ windowId }}" class="w-full text-left menu-item-btn">
       {% include menu-item-base.html name=include.name iclass=include.iclass %}
     </button>
     {% include window.html id=windowId iclass=include.iclass name=include.name type=type data=include.data
