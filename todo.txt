@@ -3,11 +3,9 @@
 - Redo guide window with divs and gap instead of manual top margins?
 - Put larger images and videos for projects
 - Capitalize words in titles?
-- Update guide window text: Mention tooltips on hover + other things
 - Ideas for menu options: Find/Search
 - Add "skills" section to about card?
 - Add more padding to about card?
-- Fix font on smallest screen sizes (too small to read?)
 - Make the portrait version of the app (mobile OS)
 - Make monochromatic themes
 - Change the font of the whole site
@@ -22,10 +20,10 @@
   - If yes, update the window dragging code
 - Add different themes (win95/98, win xp, macos, linux etc.)
 - Hover, focus etc. styles
-- Change tooltip? -> Show when hovering over the app div and not the icon, then update tooltip positioning
+- Change tooltip? -> Show when hovering over the button/link and not the icon, then update tooltip positioning
+  - Possibly set button/link's position to relative
 - Responsive tooltip styles?
 - Make another view for windows -> List view (with name, date etc. columns)
-- Make the start menu
 - Make a real email app and replace the mailto link with it?
 - Add a "properties" window for projects(all apps?) showing language used, date created etc.
 - Optimize clock code (set interval to 1 min if seconds are not shown)
@@ -38,10 +36,8 @@
 - DRY up "app" and menu-"item" includes
 - Separate window includes from apps?
 - Power on button glow animation?
-- Change guide window's starting scale(animation)
 - Add text to power on button?
 - Clear explorers' history when powering on and off again
 - Show full path in explorer windows?
-- Update project descriptions
 - Fix topbar wrapping on smaller screens (set max-w for title? etc)
 - Find a better solution for disabling desktop scrolling on opening windows?
