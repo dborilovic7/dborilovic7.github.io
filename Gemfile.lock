@@ -12,12 +12,14 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.16.3)
-    ffi (1.16.3-x64-mingw-ucrt)
+    ffi (1.17.2-x64-mingw-ucrt)
+    ffi (1.17.2-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
-    google-protobuf (4.26.1-x64-mingw-ucrt)
+    google-protobuf (4.31.1-x64-mingw-ucrt)
+      bigdecimal
       rake (>= 13)
-    google-protobuf (4.26.1-x86_64-linux)
+    google-protobuf (4.31.1-x86_64-linux-gnu)
+      bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
     i18n (1.14.5)
