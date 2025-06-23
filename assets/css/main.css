@@ -103,6 +103,7 @@ img, video {
   width: 75%;
   height: 75%;
   max-width: fit-content;
+  text-wrap: pretty;
 }
 
 #window1[open] {
@@ -113,10 +114,21 @@ img, video {
 #window1 h1 {
   align-self: center;
   padding: 0.25rem;
+  font-weight: bold;
+}
+
+#window1 h2 {
+  font-weight: 500;
+  font-size: 0.875rem;
 }
 
 #window1 p {
   font-size: 0.75rem;
+}
+
+#window1 ul {
+  font-size: 0.75rem;
+  margin-left: 2rem;
 }
 
 #window3 {
@@ -167,7 +179,11 @@ i.fa-radiation::before, i.fa-tree::before {
     padding: 0.5rem;
   }
 
-  #window1 p {
+  #window1 h2 {
+    font-size: 1rem;
+  }
+
+  #window1 p, #window1 ul {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -190,7 +206,11 @@ i.fa-radiation::before, i.fa-tree::before {
     padding: 0.75rem;
   }
 
-  #window1 p {
+  #window1 h2 {
+    font-size: 1.5rem;
+  }
+
+  #window1 p, #window1 ul {
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -208,7 +228,11 @@ i.fa-radiation::before, i.fa-tree::before {
     padding: 1rem;
   }
 
-  #window1 p {
+  #window1 h2 {
+    font-size: 1.75rem;
+  }
+
+  #window1 p, #window1 ul {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
@@ -226,7 +250,11 @@ i.fa-radiation::before, i.fa-tree::before {
     padding: 1.25rem;
   }
 
-  #window1 p {
+  #window1 h2 {
+    font-size: 2.25rem;
+  }
+
+  #window1 p, #window1 ul {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
@@ -244,7 +272,11 @@ i.fa-radiation::before, i.fa-tree::before {
     padding: 1.5rem;
   }
 
-  #window1 p {
+  #window1 h2 {
+    font-size: 2.5rem;
+  }
+
+  #window1 p, #window1 ul {
     font-size: 1.5rem;
     line-height: 2rem;
   }

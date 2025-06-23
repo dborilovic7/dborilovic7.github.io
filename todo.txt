@@ -1,5 +1,6 @@
 - Update guide window text
 - Update text for all projects
+- Redo guide window with divs and gap instead of manual top margins?
 - Put larger images and videos for projects
 - Capitalize words in titles?
 - Update guide window text: Mention tooltips on hover + other things
